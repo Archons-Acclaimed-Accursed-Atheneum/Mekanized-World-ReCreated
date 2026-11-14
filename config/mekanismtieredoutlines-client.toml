@@ -1,0 +1,4 @@
+modEnabled = true
+# Default: 0.4
+# Range: 0.0 ~ 1.0
+outlineOpacity = 0.4

@@ -1,0 +1,11 @@
+[item_glow]
+	#Enable the ionization glow post-effect on highly radioactive dropped items.
+	enabled = true
+	#Minimum total activity (Bq) of a dropped item for it to glow. Default 5.5e9 (5.5 GBq), mirrors world_source_min_bq.
+	# Default: 5.5E9
+	# Range: 0.0 ~ 1.0E30
+	threshold_bq = 5.5E9
+	#Glow strength multiplier (0..1). Higher = brighter aura.
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	intensity = 0.5

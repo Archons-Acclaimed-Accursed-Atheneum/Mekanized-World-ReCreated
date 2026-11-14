@@ -1,0 +1,16 @@
+[display]
+	#Unit for memory values: AUTO, MB, or GB
+	#Allowed Values: AUTO, MB, GB
+	unit = "AUTO"
+	#Show memory HUD overlay during gameplay
+	showHud = false
+	#HUD overlay position on screen
+	#Allowed Values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+	hudPosition = "TOP_LEFT"
+	#HUD overlay scale factor
+	# Default: 1.0
+	# Range: 0.5 ~ 2.0
+	hudScale = 1.0
+	#UI theme mode: DARK or LIGHT
+	#Allowed Values: DARK, LIGHT
+	uiTheme = "DARK"

@@ -1,0 +1,6 @@
+{
+    ae2_storage_for_item_fluid_tasks: 1b,
+    ae2_push_rewards: 1b,
+    emergency_repeatable: 0b,
+    emergency_cooldown_seconds: 0
+}

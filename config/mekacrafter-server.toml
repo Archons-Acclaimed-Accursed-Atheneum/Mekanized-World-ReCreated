@@ -1,0 +1,18 @@
+#Energy (FE) consumed per tick while the MekaCrafter is planning or crafting, before energy upgrades.
+#Eight energy upgrades divide it by 10, like any Mekanism machine. Mekanism's Formulaic Assemblicator uses 100 FE/t.
+# Default: 400
+# Range: 1 ~ 1000000000
+energyUsagePerTick = 400
+#Energy (FE) the MekaCrafter can store, before energy upgrades.
+# Default: 10000000
+# Range: 1000 ~ 9223372036854775807
+energyStorage = 10000000
+#Ticks each crafting-table or stonecutter operation takes, plus one extra tick per three occupied grid slots.
+#A 9-ingredient recipe therefore takes base + 3 ticks. A job's duration is the sum over all its crafts.
+# Default: 3
+# Range: 1 ~ 200
+baseTicksPerCraft = 3
+#Fixed ticks added once per job (fetching inputs from the QIO and storing the result).
+# Default: 20
+# Range: 0 ~ 1200
+jobOverheadTicks = 20

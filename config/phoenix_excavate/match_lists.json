@@ -1,0 +1,102 @@
+{
+  "ore": [
+    {
+      "type": "TAG",
+      "id": "c:ores"
+    },
+    {
+      "type": "TAG",
+      "id": "c:ores/coal"
+    },
+    {
+      "type": "TAG",
+      "id": "c:ores/iron"
+    },
+    {
+      "type": "TAG",
+      "id": "c:ores/copper"
+    },
+    {
+      "type": "TAG",
+      "id": "c:ores/gold"
+    },
+    {
+      "type": "TAG",
+      "id": "c:ores/redstone"
+    },
+    {
+      "type": "TAG",
+      "id": "c:ores/lapis"
+    },
+    {
+      "type": "TAG",
+      "id": "c:ores/diamond"
+    },
+    {
+      "type": "TAG",
+      "id": "c:ores/emerald"
+    },
+    {
+      "type": "TAG",
+      "id": "c:ores/quartz"
+    },
+    {
+      "type": "TAG",
+      "id": "c:ores/netherite_scrap"
+    }
+  ],
+  "any": [
+    {
+      "type": "TAG",
+      "id": "c:ores"
+    },
+    {
+      "type": "TAG",
+      "id": "c:ores/coal"
+    },
+    {
+      "type": "TAG",
+      "id": "c:ores/iron"
+    },
+    {
+      "type": "TAG",
+      "id": "c:ores/copper"
+    },
+    {
+      "type": "TAG",
+      "id": "c:ores/gold"
+    },
+    {
+      "type": "TAG",
+      "id": "c:ores/redstone"
+    },
+    {
+      "type": "TAG",
+      "id": "c:ores/lapis"
+    },
+    {
+      "type": "TAG",
+      "id": "c:ores/diamond"
+    },
+    {
+      "type": "TAG",
+      "id": "c:ores/emerald"
+    },
+    {
+      "type": "TAG",
+      "id": "c:ores/quartz"
+    },
+    {
+      "type": "TAG",
+      "id": "c:ores/netherite_scrap"
+    },
+    {
+      "type": "TAG",
+      "id": "minecraft:logs"
+    },
+    {
+      "type": "TAG",
+      "id": "minecraft:leaves"
+    }
+  ]
+}

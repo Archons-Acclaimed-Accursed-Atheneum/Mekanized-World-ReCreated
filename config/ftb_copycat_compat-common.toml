@@ -1,0 +1,5 @@
+["Copycat Ultimine"]
+	#Master switch for FTB Ultimine copycat block chain right-click compatibility.
+	#When enabled: right-clicking a copycat block with a BlockItem or Wrench while holding
+	#the Ultimine key will apply the action to all adjacent copycat blocks with the same material.
+	copycatUltimineEnabled = true

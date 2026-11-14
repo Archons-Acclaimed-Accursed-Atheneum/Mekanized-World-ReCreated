@@ -1,0 +1,7 @@
+{
+  "id": "mekanized_world:long_rods",
+  "type": "remi:group",
+  "contents": [
+    "#c:long_rods"
+  ]
+}

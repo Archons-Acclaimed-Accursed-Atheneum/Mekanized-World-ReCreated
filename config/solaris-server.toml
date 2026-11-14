@@ -1,0 +1,114 @@
+[playerPositions]
+	#Who a player can see on their map, beyond normal render distance. OFF = nobody (default), GUILD = online guild-mates only, ALL = every other player in the same dimension. The server decides this and only sends what is allowed, so a modified client cannot see more. ALL is effectively a player radar; think twice on PvP servers.
+	#Allowed Values: OFF, GUILD, ALL
+	visibility = "OFF"
+	#How often positions are sent, in ticks (20 = once per second). Higher values use less bandwidth; with ALL the cost grows with the square of the player count.
+	# Default: 20
+	# Range: 5 ~ 100
+	updateTicks = 20
+	#Only share players within this many blocks of the viewer. 0 = unlimited.
+	# Default: 0
+	# Range: 0 ~ 30000000
+	maxRangeBlocks = 0
+	#Do not share the position of players who are sneaking.
+	hideSneaking = true
+	#Do not share the position of players with the invisibility effect. Spectators are never shared. Players can also hide themselves with /solaris privacy hide.
+	hideInvisible = true
+	#Dimension ids where player positions are never shared and never shown, e.g. ["minecraft:the_nether"]. Applies to viewers and to the players being viewed.
+	blockedDimensions = []
+
+[deathMarkers]
+	#The server records deaths and tells the client where to put the marker. This is more reliable than clients detecting their own death (it also works with instant respawn). Players can still turn death markers off in their own config. When false, clients that have the mod place their own marker as before.
+	serverAuthoritative = true
+	#Also give online guild-mates a marker where a player died. Needs the Guilds mod. These show up in the mates' waypoint lists under 'Guild Deaths'.
+	shareWithGuild = false
+
+[pings]
+	#Who sees a map ping. OFF = pings disabled, GUILD = the sender and online guild-mates (default), ALL = everyone in the sender's dimension.
+	#Allowed Values: OFF, GUILD, ALL
+	audience = "GUILD"
+	#How long a ping stays on the map.
+	# Default: 30
+	# Range: 5 ~ 300
+	durationSeconds = 30
+	#Minimum time between pings from the same player, in ticks (20 = one second).
+	# Default: 20
+	# Range: 5 ~ 200
+	cooldownTicks = 20
+	#A ping is rejected if it is further than this many blocks from the player sending it.
+	# Default: 512
+	# Range: 16 ~ 4096
+	maxDistanceBlocks = 512
+
+[structureWaypoints]
+	#Tell players when they first set foot in a generated structure (village, mineshaft, stronghold...) so their client can add a waypoint. Players can still turn the waypoints off in their own config (autoStructureWaypoints).
+	enabled = true
+
+[sharedExploration]
+	#Guild members share explored map chunks: what one player uncovers shows on their guild-mates' maps. The server stores the data (world/solaris/guildmaps), so this costs disk space and bandwidth; off by default. Needs the Guilds mod. Players can opt out in their own config, and the shared_exploration feature can be switched per player.
+	enabled = false
+	#Most chunks stored per guild per dimension (about 1 KB each). Uploads past this are refused.
+	# Default: 20000
+	# Range: 100 ~ 200000
+	maxChunksPerGuildDimension = 20000
+	#Most chunks one player may upload per second (short bursts of five times this are allowed).
+	# Default: 60
+	# Range: 5 ~ 400
+	uploadChunksPerSecond = 60
+	#Most chunks streamed to one player per second when catching them up.
+	# Default: 60
+	# Range: 5 ~ 600
+	downloadChunksPerSecond = 60
+	#A newly uploaded chunk is pushed live to online guild-mates within this many chunks; others pick it up when they get near or open that part of the map.
+	# Default: 160
+	# Range: 16 ~ 1000
+	relayRadiusChunks = 160
+	#How often changed shared map data is written to disk.
+	# Default: 5
+	# Range: 1 ~ 60
+	saveMinutes = 5
+
+[sharedVeins]
+	#Guild members share the GT ore veins they find (needs GregTech on the clients and the Guilds mod). Stored in the world's save data; small.
+	enabled = true
+	#Most veins stored per guild.
+	# Default: 2000
+	# Range: 50 ~ 20000
+	maxPerGuild = 2000
+
+[claims]
+	#Sync territory from mods that register a claim provider (see SolarisClaimsAPI) to players' maps. Does nothing if no mod registers one.
+	enabled = true
+	#How often claims are re-checked per player, in ticks. Data is only sent when it changed.
+	# Default: 40
+	# Range: 20 ~ 600
+	updateTicks = 40
+	#Claims are sent for this many chunks around the player in each direction.
+	# Default: 24
+	# Range: 4 ~ 64
+	radiusChunks = 24
+
+[progression]
+	#Unlock map features through gates. Each entry is "feature@dimension=gate" (use * for every dimension, or leave out the @ part). A gate is an advancement id, a name you grant with /solaris gate grant, or a condition another mod registers through SolarisGatesAPI. Put | between gates to unlock when any one is met, and write several entries for the same feature to require all of them. Example: ["minimap@*=minecraft:story/mine_stone", "pings=mymod:scout|mymod:veteran"]. Features include minimap, fullscreen_map, world_map, waypoints, underground_map, globe_view, shape_planner, show_mobs, show_players, pings, claims and guild_share (see /solaris feature for the full list). Until unlocked, a feature is in lockedState. A guild shares feature states, so for a guild member an unlock is permanent (one member meeting a gate unlocks it for all); a player without a guild is locked again if they stop meeting the gate.
+	gates = []
+	#State of a gated feature before its gate is met (DISABLED hides it, VISIBLE shows it greyed out).
+	#Allowed Values: DISABLED, VISIBLE, ENABLED
+	lockedState = "DISABLED"
+	#State of a gated feature once its gate is met.
+	#Allowed Values: DISABLED, VISIBLE, ENABLED
+	unlockedState = "ENABLED"
+	#How often gates are re-checked for every player, in ticks. This is what lets a mod's own condition unlock a feature without calling refresh. 0 = only on login, when an advancement is earned, and when refresh is called.
+	# Default: 100
+	# Range: 0 ~ 1200
+	pollTicks = 100
+
+[guildWaypoints]
+	#Let guilds keep a shared waypoint list on the server (needs the Guilds mod).
+	enabled = true
+	#Most waypoints a single guild can have in its shared list.
+	# Default: 64
+	# Range: 1 ~ 400
+	maxPerGuild = 64
+	#Who may add, change or remove entries. ALL_MEMBERS = any guild member. HOOK = only what the Guilds mod allows through SolarisGuildAPI.setWaypointPermission (nobody if it never registers one). Using the feature also needs the guild_share feature enabled.
+	#Allowed Values: ALL_MEMBERS, HOOK
+	editPolicy = "ALL_MEMBERS"

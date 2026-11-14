@@ -1,0 +1,41 @@
+[claim_power]
+	#Claim blocks every owner token (guild or solo player) starts with, before accrual or grants.
+	# Default: 500
+	# Range: > 0
+	base = 500
+	#Claim blocks passively accrued per hour, for every hour at least one member of the owner token is online.
+	# Default: 4.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	perHour = 4.0
+	#Cap on passively-accrued claim blocks (does not cap base or admin-granted blocks).
+	# Default: 500.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	maxAccrual = 500.0
+
+[chunkload_power]
+	#Chunkload blocks every owner token starts with, before accrual or grants.
+	# Default: 100
+	# Range: > 0
+	base = 100
+	#Chunkload blocks passively accrued per hour, for every hour at least one member of the owner token is online.
+	# Default: 0.5
+	# Range: 0.0 ~ 1.7976931348623157E308
+	perHour = 0.5
+	#Cap on passively-accrued chunkload blocks (does not cap base or admin-granted blocks).
+	# Default: 50.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	maxAccrual = 50.0
+
+[restrictions]
+	#Maximum distance, in chunks, a player can be from a chunk to claim it — the Solaris-backed claim map lets you pan around and see chunks far past where you're actually standing, so without a limit here players could claim land anywhere they've simply looked at, not just land they've traveled to. 0 = no limit.
+	# Default: 32
+	# Range: > 0
+	maxClaimDistanceChunks = 32
+	#Flat hard ceiling on how many chunks a single owner token (guild or solo player) may have claimed at once, independent of the claim-power economy — a config admins can use even if they don't want to touch the power-pool system at all. 0 = no limit.
+	# Default: 0
+	# Range: > 0
+	maxClaimedChunksPerOwner = 0
+	#Flat hard ceiling on how many of an owner token's claimed chunks may be forceloaded at once, independent of the chunkload-power economy. 0 = no limit.
+	# Default: 0
+	# Range: > 0
+	maxForceloadedChunksPerOwner = 0

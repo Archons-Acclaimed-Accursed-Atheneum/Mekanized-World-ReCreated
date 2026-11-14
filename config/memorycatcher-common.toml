@@ -1,0 +1,46 @@
+[monitor]
+	#Memory sampling interval in milliseconds
+	# Default: 1000
+	# Range: 100 ~ 10000
+	refreshInterval = 1000
+	#Number of historical snapshots to retain
+	# Default: 300
+	# Range: 60 ~ 3600
+	historyCapacity = 300
+
+[tracking]
+	#Enable per-mod memory estimation via registry analysis
+	enableModTracking = true
+	#Force GC before init-delta tracking (may cause lag spike)
+	gcBeforeTracking = false
+
+[analysis]
+	#Enable shallow heap analysis via JMX class histogram on startup
+	enableShallowHeap = true
+	#Metaspace estimation factor (.class file size * factor = estimated metaspace)
+	# Default: 2.0
+	# Range: 1.0 ~ 5.0
+	metaspaceFactor = 2.0
+	#Directory for temporary heap dump files (relative to game directory)
+	heapDumpDirectory = "memorycatcher"
+
+[network]
+	#Respond to in-game client requests for server memory stats (OP only)
+	allowClientQuery = true
+
+[web]
+	#Start an embedded HTTP dashboard on the dedicated server
+	enabled = false
+	#Port for the embedded web dashboard
+	# Default: 8080
+	# Range: 1 ~ 65535
+	port = 8080
+	#Bind address for the web dashboard. Use 127.0.0.1 to restrict to localhost,
+	#or 0.0.0.0 to expose on all interfaces. When exposed, set web.token or a firewall rule.
+	bindAddress = "0.0.0.0"
+	#Optional access token. If non-empty, requests must pass ?token= or Authorization header.
+	token = ""
+	#Number of down-sampled history points returned by /api/memory
+	# Default: 120
+	# Range: 10 ~ 1000
+	historyPoints = 120

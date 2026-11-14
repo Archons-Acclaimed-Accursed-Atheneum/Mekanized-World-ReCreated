@@ -1,0 +1,7 @@
+{
+  "id": "mekanized_world:bolts",
+  "type": "remi:group",
+  "contents": [
+    "#c:bolts"
+  ]
+}

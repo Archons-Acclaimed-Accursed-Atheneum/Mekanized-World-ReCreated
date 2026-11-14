@@ -1,0 +1,224 @@
+[general]
+	#Enable debug logging for multiblocks.
+	debug_logging = false
+
+[fission_reactor]
+	#Minimum reactor edge length (cuboid casing).
+	# Default: 3
+	# Range: 3 ~ 24
+	min_size = 3
+	#Maximum reactor edge length (cuboid casing).
+	# Default: 26
+	# Range: 5 ~ 32
+	max_size = 26
+	#Explosion radius on meltdown. 4 ~ TNT. 0 disables the explosion.
+	# Default: 4.0
+	# Range: 0.0 ~ 20.0
+	explosion_radius = 4.0
+	#Base heat capacity before the size scaling factor; meltdown when exceeded.
+	# Default: 1000000.0
+	# Range: 1000.0 ~ 1.0E8
+	heat_capacity = 1000000.0
+	#Heat/cooling ratio coefficient feeding the heat multiplier curve.
+	# Default: 1.0
+	# Range: 0.01 ~ 20.0
+	heat_multiplier = 1.0
+	#Upper bound of the collected-heat multiplier.
+	# Default: 3.0
+	# Range: 0.01 ~ 3.0
+	heat_multiplier_cap = 3.0
+	#Percent FE bonus per moderator attached to a fuel cell.
+	# Default: 16.666666667
+	# Range: 0.0 ~ 1000.0
+	moderator_fe_multiplier = 16.666666667
+	#Percent heat bonus per moderator attached to a fuel cell.
+	# Default: 33.33333333
+	# Range: 0.0 ~ 1000.0
+	moderator_heat_multiplier = 33.33333333
+	#Allow toggling the reactor into boiling (steam) mode.
+	supports_boiling_mode = true
+	#Steam production rate multiplier (percent).
+	# Default: 100.0
+	# Range: 0.01 ~ 1000000.0
+	boiling_mult = 100.0
+	#Global FE generation multiplier.
+	# Default: 10.0
+	# Range: 0.01 ~ 1000000.0
+	fe_generation_multiplier = 10.0
+	#mB of coolant a single active heat sink consumes per tick.
+	# Default: 10
+	# Range: 1 ~ 10000
+	active_heatsink_coolant_per_tick = 10
+
+[fission_fuel]
+	#Heat multiplier applied to all fission fuels.
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	fuel_heat_multiplier = 1.0
+	#Fuel longevity multiplier; higher = fuel lasts longer.
+	# Default: 1.0
+	# Range: 0.01 ~ 1000.0
+	depletion_multiplier = 1.0
+
+[kugelblitz_chamber]
+	#Multiplier for kugelblitz chamber FE generation.
+	# Default: 1.0
+	# Range: 0.001 ~ 1000.0
+	fe_generation_multiplier = 1.0
+	#Adjust rate of blackhole evaporation.
+	# Default: 1.0
+	# Range: 0.001 ~ 1000.0
+	blackhole_evaporation_rate = 1.0
+	#Laser burst distance.
+	# Default: 32
+	# Range: 8 ~ 64
+	laser_distance = 32
+	#EXPL FE requirement per pulse.
+	# Default: 10240000000
+	# Range: 2048000000 ~ 20480000000
+	expl_fe = 10240000000
+	#Explosion radius on meltdown. 0 disables the explosion.
+	# Default: 10.0
+	# Range: 0.0 ~ 20.0
+	explosion_radius = 10.0
+	#Enable blackhole distortion shader.
+	blackhole_shader = true
+
+[turbine]
+	#Minimum turbine edge length.
+	# Default: 5
+	# Range: 5 ~ 25
+	min_size = 5
+	#Maximum turbine edge length.
+	# Default: 17
+	# Range: 5 ~ 25
+	max_size = 17
+	#Steam flow per blade in mB/t.
+	# Default: 2000
+	# Range: 100 ~ 1000000
+	blade_flow = 2000
+	#Energy generation multiplier.
+	# Default: 10.0
+	# Range: 1.0 ~ 1000000.0
+	energy_gen = 10.0
+	#Conversion rate of turbine rotation into Create kinetic speed.
+	# Default: 0.2
+	# Range: 0.01 ~ 2.0
+	create_energy_conversion = 0.2
+
+[heat_exchanger]
+	#Minimum heat exchanger edge length.
+	# Default: 5
+	# Range: 3 ~ 25
+	min_size = 5
+	#Maximum heat exchanger edge length.
+	# Default: 15
+	# Range: 5 ~ 25
+	max_size = 15
+	#Standby FE/t consumed per interior heat exchanger block while powered by redstone.
+	# Default: 200
+	# Range: 0 ~ 1000000
+	energy_per_block = 200
+	#Recipe operation units per server tick, per interior heat exchanger block.
+	# Default: 50000.0
+	# Range: 0.01 ~ 100000.0
+	throughput_per_block = 50000.0
+	#Internal energy buffer (FE).
+	# Default: 1000000
+	# Range: > 0
+	energy_capacity = 1000000
+	#Fluid tank capacity (mB) per interior heat exchanger block, for each tank.
+	# Default: 100000
+	# Range: 1000 ~ 1000000
+	fluid_capacity_per_block = 100000
+	#Heat removed from the buffer per tick (H/t) per radiator block. Passive: applies whenever formed.
+	# Default: 1000000
+	# Range: > 0
+	radiator_cooling = 1000000
+	#Heat buffer capacity per interior heat exchanger block.
+	# Default: 10000000
+	# Range: > 1
+	heat_capacity_per_block = 10000000
+
+[msr_reactor]
+	#Minimum MSR edge length (cuboid casing).
+	# Default: 5
+	# Range: 3 ~ 24
+	min_size = 5
+	#Maximum MSR edge length (cuboid casing).
+	# Default: 11
+	# Range: 5 ~ 32
+	max_size = 11
+	#TRISO pebbles held per fuel cell block.
+	# Default: 10
+	# Range: 2 ~ 100
+	pebbles_per_fuel_cell = 10
+	#Molten salt volume (mB) per fuel cell block.
+	# Default: 10000
+	# Range: 1 ~ 1000000
+	volume_per_fuel_cell = 10000
+
+[accelerators]
+	#Accelerator size preset: 1 = 6..100, 2 = 60..1000, 3 = 600..10000.
+	# Default: 1
+	# Range: 1 ~ 3
+	scale_preset = 1
+	# Default: 0.02
+	# Range: 0.0 ~ 1.0
+	beam_attenuation = 0.02
+	# Default: 10000
+	# Range: 1 ~ 9223372036854775807
+	beam_scaling = 10000
+	# Default: 25000
+	# Range: 1 ~ 1000000000
+	heat_capacity_per_block = 25000
+	# Default: 10000
+	# Range: 0 ~ 9223372036854775807
+	base_energy_requirement = 10000
+	# Default: 0.0025
+	# Range: 0.0 ~ 1.0
+	thermal_conductivity = 0.0025
+	# Default: 5000
+	# Range: 0 ~ 9223372036854775807
+	ring_minimum_input_energy_kev = 5000
+	# Default: 1200
+	# Range: 0 ~ 72000
+	overheat_cooldown_ticks = 1200
+	# Default: 16
+	# Range: 1 ~ 256
+	beam_connection_reach = 16
+
+[particle_chambers]
+	# Default: 5
+	# Range: 5 ~ 11
+	target_min_size = 5
+	# Default: 11
+	# Range: 5 ~ 11
+	target_max_size = 11
+	# Default: 5
+	# Range: 5 ~ 11
+	decay_min_size = 5
+	# Default: 11
+	# Range: 5 ~ 11
+	decay_max_size = 11
+	# Default: 2000
+	# Range: 0 ~ 9223372036854775807
+	decay_base_power = 2000
+	# Default: 5
+	# Range: 5 ~ 11
+	collision_min_transverse_size = 5
+	# Default: 11
+	# Range: 5 ~ 11
+	collision_max_transverse_size = 11
+	# Default: 13
+	# Range: 13 ~ 21
+	collision_min_length = 13
+	# Default: 21
+	# Range: 13 ~ 21
+	collision_max_length = 21
+	# Default: 17
+	# Range: 13 ~ 21
+	collision_preferred_length = 17
+	# Default: 2000
+	# Range: 0 ~ 9223372036854775807
+	collision_base_power = 2000

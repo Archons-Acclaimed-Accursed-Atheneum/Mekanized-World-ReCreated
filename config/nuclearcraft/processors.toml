@@ -1,0 +1,329 @@
+[common]
+	#Multiplier applied to the process time of every processor recipe
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Multiplier applied to the energy per tick of every processor recipe
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[alloy_smelter]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[analyzer]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[assembler]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[centrifuge]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[chamber_terminal]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[chemical_reactor]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[crystallizer]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[decay_hastener]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[electrolyzer]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[extractor]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[fission_reactor_controller]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[fluid_enricher]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[fluid_infuser]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[fuel_reprocessor]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[fusion_reactor_core]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[gas_scrubber]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[heat_exchanger_controller]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[ingot_former]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[irradiator]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[isotope_separator]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[leacher]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[manufactory]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[melter]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[msr_controller]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[nuclear_furnace]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[pressurizer]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[pump]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[rock_crusher]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[steam_turbine]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[subatomic_liquifier]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[supercooler]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0
+
+[turbine_controller]
+	#Process time multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	time_multiplier = 1.0
+	#Energy per tick multiplier, stacks with the common multiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	energy_multiplier = 1.0

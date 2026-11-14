@@ -1,0 +1,4 @@
+#Disable the original MekaJadeUpgrades when it is installed together with this mod.
+#与原版 MekaJadeUpgrades 同时安装时停用原版，由本模组接管（避免同一行升级显示两遍）。
+#默认开启；关掉则两个模组都生效。
+disableMekaJadeUpgrades = true

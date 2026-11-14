@@ -1,0 +1,73 @@
+[general]
+	enableOptimizations = true
+	showFps = true
+
+[extra]
+	enableExtraHud = true
+	showFpsExtended = true
+	showCoords = false
+	showFacing = false
+	showBiome = false
+	showMemory = true
+	showCpu = true
+	showGpu = true
+	showGameTime = true
+	showPing = false
+	#Allowed Values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+	overlayCorner = "TOP_LEFT"
+	# Default: 100
+	# Range: 50 ~ 200
+	hudScale = 100
+	#Allowed Values: NONE, SHADOW, BACKGROUND
+	textContrast = "SHADOW"
+	#Allowed Values: SUBTLE, MEDIUM, HEAVY, SOLID
+	backgroundOpacity = "MEDIUM"
+	#Allowed Values: INTEGER, ONE_DECIMAL, TWO_DECIMALS
+	coordPrecision = "TWO_DECIMALS"
+	#Allowed Values: DYNAMIC, WHITE, GREEN, CYAN, GOLD, YELLOW, RED, PURPLE, GRAY
+	fpsColor = "DYNAMIC"
+	#Allowed Values: DYNAMIC, WHITE, GREEN, CYAN, GOLD, YELLOW, RED, PURPLE, GRAY
+	coordsColor = "WHITE"
+	#Allowed Values: DYNAMIC, WHITE, GREEN, CYAN, GOLD, YELLOW, RED, PURPLE, GRAY
+	facingColor = "GRAY"
+	#Allowed Values: DYNAMIC, WHITE, GREEN, CYAN, GOLD, YELLOW, RED, PURPLE, GRAY
+	biomeColor = "CYAN"
+	#Allowed Values: DYNAMIC, WHITE, GREEN, CYAN, GOLD, YELLOW, RED, PURPLE, GRAY
+	memoryColor = "DYNAMIC"
+	#Allowed Values: DYNAMIC, WHITE, GREEN, CYAN, GOLD, YELLOW, RED, PURPLE, GRAY
+	cpuColor = "DYNAMIC"
+	#Allowed Values: DYNAMIC, WHITE, GREEN, CYAN, GOLD, YELLOW, RED, PURPLE, GRAY
+	gpuColor = "DYNAMIC"
+	#Allowed Values: DYNAMIC, WHITE, GREEN, CYAN, GOLD, YELLOW, RED, PURPLE, GRAY
+	timeColor = "YELLOW"
+	#Allowed Values: DYNAMIC, WHITE, GREEN, CYAN, GOLD, YELLOW, RED, PURPLE, GRAY
+	pingColor = "DYNAMIC"
+
+[performance]
+	fastSuperByteBuffer = true
+	backfaceCulling = true
+	fastLightCache = true
+	cullBelts = true
+	kineticCulling = true
+	skipStationaryKinetics = true
+	kineticAudioThrottling = true
+	kineticLod = true
+	cullBlockEntities = true
+	cullParticles = true
+	reduceBlockEntityLag = true
+	cullEntities = true
+	cullShadows = true
+	createFxCull = true
+	aggressiveTickSleep = true
+
+[memory]
+	fixMemoryLeaks = true
+	fixClientLevelLeak = true
+	fixFakePlayerLeak = true
+	fixDebugSubscriptionLeak = true
+
+[quality]
+	optimizeContraptions = true
+
+[advanced]
+	optimizeEntityRendering = true

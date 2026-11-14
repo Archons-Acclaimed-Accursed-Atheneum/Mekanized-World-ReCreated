@@ -1,0 +1,12 @@
+[nuke]
+	#AUTO follows Minecraft graphics: FAST uses LOW, FANCY and FABULOUS use HIGH. LOW, BALANCED and HIGH override it.
+	#Allowed Values: AUTO, LOW, BALANCED, HIGH
+	quality = "AUTO"
+	#Seconds the fully formed mushroom cloud stays before its one-minute fade.
+	# Default: 300
+	# Range: 300 ~ 3600
+	mature_hold_seconds = 300
+	#Render the expanding thermal shockwave refraction.
+	thermal_refraction = true
+	#Short screen exposure flash on detonation.
+	hud_flash = true

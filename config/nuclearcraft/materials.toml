@@ -1,0 +1,981 @@
+[alugentum]
+	dust = true
+
+[aluminum]
+	ingot = true
+	dust = true
+	plate = true
+	nugget = true
+	block = true
+	fluid = true
+
+[aluminum_clean_slurry]
+	fluid = true
+
+[aluminum_slurry]
+	fluid = true
+
+[americium241]
+	block = true
+
+[ammonia]
+	fluid = true
+
+[aqua_regia_acid]
+	fluid = true
+
+[argon]
+	fluid = true
+
+[arsenic]
+	dust = true
+	fluid = true
+
+[baratol]
+	ingot = true
+	dust = true
+	fluid = true
+
+[barium]
+	dust = true
+
+[barium_nitrate]
+	dust = true
+	fluid = true
+
+[beryllium]
+	ingot = true
+	dust = true
+	plate = true
+	nugget = true
+	block = true
+	fluid = true
+
+[beryllium_fluoride]
+	fluid = true
+
+[bismuth]
+	dust = true
+
+[borax]
+	dust = true
+
+[borax_solution]
+	fluid = true
+
+[boric_acid]
+	fluid = true
+
+[boron]
+	ore = true
+	deepslate_ore = true
+	raw_ore = true
+	ingot = true
+	dust = true
+	plate = true
+	nugget = true
+	block = true
+	fluid = true
+
+[boron_arsenide]
+	gem = true
+	dust = true
+	fluid = true
+
+[boron_arsenide_solution]
+	fluid = true
+
+[boron_clean_slurry]
+	fluid = true
+
+[boron_nitride]
+	gem = true
+	dust = true
+
+[boron_nitride_solution]
+	fluid = true
+
+[boron_slurry]
+	fluid = true
+
+[bronze]
+	ingot = true
+	dust = true
+	plate = true
+	nugget = true
+	block = true
+	fluid = true
+
+[bscco]
+	dust = true
+
+[c_mn_blend]
+	dust = true
+
+[caesium_137]
+	dust = true
+	fluid = true
+
+[calcium]
+	ingot = true
+	dust = true
+
+[calcium_sulfate]
+	dust = true
+
+[calcium_sulfate_solution]
+	fluid = true
+
+[californium250]
+	block = true
+
+[carbon]
+	fluid = true
+
+[carbon_dioxide]
+	fluid = true
+
+[carbon_manganese]
+	ingot = true
+	dust = true
+	fluid = true
+
+[carbon_monoxide]
+	fluid = true
+
+[carobbiite]
+	gem = true
+	dust = true
+
+[charcoal]
+	dust = true
+
+[chlorine]
+	fluid = true
+
+[chocolate_liquor]
+	fluid = true
+
+[chromium]
+	ingot = true
+	dust = true
+	fluid = true
+
+[coal]
+	dust = true
+	fluid = true
+
+[cobalt]
+	ore = true
+	deepslate_ore = true
+	raw_ore = true
+	ingot = true
+	dust = true
+	plate = true
+	nugget = true
+	block = true
+	fluid = true
+
+[cobalt_clean_slurry]
+	fluid = true
+
+[cobalt_slurry]
+	fluid = true
+
+[cocoa_butter]
+	fluid = true
+
+[condensate_water]
+	fluid = true
+
+[copper]
+	dust = true
+	plate = true
+	fluid = true
+
+[copper_clean_slurry]
+	fluid = true
+
+[copper_slurry]
+	fluid = true
+
+[cryotheum]
+	fluid = true
+
+[crystal_binder]
+	dust = true
+
+[dark_chocolate]
+	fluid = true
+
+[deuterium]
+	fluid = true
+
+[diamond]
+	dust = true
+	fluid = true
+
+[diborane]
+	fluid = true
+
+[dimensional_blend]
+	dust = true
+
+[electrum]
+	ingot = true
+	dust = true
+	plate = true
+	nugget = true
+	block = true
+	fluid = true
+
+[emerald]
+	dust = true
+
+[emergency_coolant]
+	fluid = true
+
+[emergency_coolant_heated]
+	fluid = true
+
+[end_stone]
+	dust = true
+
+[enderium]
+	dust = true
+	fluid = true
+
+[energetic_blend]
+	dust = true
+
+[erbium]
+	dust = true
+
+[ethanol]
+	fluid = true
+
+[ethene]
+	fluid = true
+
+[europium_155]
+	dust = true
+	fluid = true
+
+[exhaust_steam]
+	fluid = true
+
+[extreme]
+	ingot = true
+	dust = true
+	plate = true
+	fluid = true
+
+[ferroboron]
+	ingot = true
+	dust = true
+	plate = true
+	fluid = true
+
+[fissile_fuel]
+	fluid = true
+
+[flibe_hot_molten_salt]
+	fluid = true
+
+[flibe_molten_salt]
+	fluid = true
+
+[fluorine]
+	fluid = true
+
+[fluorite]
+	gem = true
+	dust = true
+
+[fluorite_water]
+	fluid = true
+
+[fluoromethane]
+	fluid = true
+
+[gadolinium]
+	dust = true
+
+[gelatin]
+	fluid = true
+
+[germanium]
+	dust = true
+
+[glowstone]
+	fluid = true
+
+[gold]
+	dust = true
+	fluid = true
+
+[gold_clean_slurry]
+	fluid = true
+
+[gold_slurry]
+	fluid = true
+
+[graphite]
+	ingot = true
+	dust = true
+	plate = true
+	block = true
+	fluid = true
+
+[hafnium]
+	ingot = true
+	dust = true
+
+[hard_carbon]
+	ingot = true
+	dust = true
+	plate = true
+	fluid = true
+
+[heavy_water]
+	fluid = true
+
+[helium]
+	fluid = true
+
+[helium_3]
+	fluid = true
+
+[high_pressure_steam]
+	fluid = true
+
+[hot_helium]
+	fluid = true
+
+[hsla_steel]
+	ingot = true
+	dust = true
+	plate = true
+	fluid = true
+
+[hydrated_gelatin]
+	fluid = true
+
+[hydrochloric_acid]
+	fluid = true
+
+[hydrofluoric_acid]
+	fluid = true
+
+[hydrogen]
+	fluid = true
+
+[hydrogen_chloride]
+	fluid = true
+
+[ice]
+	fluid = true
+
+[iodine]
+	dust = true
+
+[iridium]
+	ingot = true
+	dust = true
+	fluid = true
+
+[iron]
+	dust = true
+	plate = true
+	fluid = true
+
+[iron_clean_slurry]
+	fluid = true
+
+[iron_slurry]
+	fluid = true
+
+[irradiated_borax]
+	dust = true
+
+[irradiated_borax_solution]
+	fluid = true
+
+[irradiated_boron]
+	fluid = true
+
+[irradiated_lithium]
+	fluid = true
+
+[kumanderite]
+	block = true
+
+[lapis]
+	dust = true
+	fluid = true
+
+[lead]
+	ore = true
+	raw_ore = true
+	ingot = true
+	dust = true
+	plate = true
+	nugget = true
+	block = true
+	fluid = true
+
+[lead_clean_slurry]
+	fluid = true
+
+[lead_platinum]
+	ingot = true
+	dust = true
+	fluid = true
+
+[lead_slurry]
+	fluid = true
+
+[liquid_helium]
+	fluid = true
+
+[liquid_hydrogen]
+	fluid = true
+
+[liquid_nitrogen]
+	fluid = true
+
+[liquid_oxygen]
+	fluid = true
+
+[lithium]
+	ore = true
+	raw_ore = true
+	ingot = true
+	dust = true
+	plate = true
+	nugget = true
+	block = true
+	fluid = true
+
+[lithium_clean_slurry]
+	fluid = true
+
+[lithium_fluoride]
+	fluid = true
+
+[lithium_manganese_dioxide]
+	ingot = true
+	dust = true
+	plate = true
+	fluid = true
+
+[lithium_manganese_oxide]
+	ingot = true
+	dust = true
+	plate = true
+	fluid = true
+
+[lithium_slurry]
+	fluid = true
+
+[low_pressure_steam]
+	fluid = true
+
+[low_quality_steam]
+	fluid = true
+
+[magnesium]
+	ore = true
+	deepslate_ore = true
+	raw_ore = true
+	ingot = true
+	dust = true
+	plate = true
+	nugget = true
+	block = true
+	fluid = true
+
+[magnesium_clean_slurry]
+	fluid = true
+
+[magnesium_diboride]
+	ingot = true
+	fluid = true
+
+[magnesium_slurry]
+	fluid = true
+
+[manganese]
+	ingot = true
+	dust = true
+	plate = true
+	fluid = true
+
+[manganese_dioxide]
+	ingot = true
+	dust = true
+	fluid = true
+
+[manganese_oxide]
+	ingot = true
+	dust = true
+	fluid = true
+
+[marshmallow]
+	fluid = true
+
+[mercury]
+	ingot = true
+	fluid = true
+
+[methanol]
+	fluid = true
+
+[milk_chocolate]
+	fluid = true
+
+[molybdenum]
+	dust = true
+	fluid = true
+
+[neodymium]
+	dust = true
+
+[neon]
+	fluid = true
+
+[netherite]
+	dust = true
+	plate = true
+
+[neutronium]
+	ingot = true
+
+[nichrome]
+	ingot = true
+	fluid = true
+
+[nickel]
+	ingot = true
+	dust = true
+
+[nickel_clean_slurry]
+	fluid = true
+
+[nickel_slurry]
+	fluid = true
+
+[niobium]
+	ingot = true
+	dust = true
+	fluid = true
+
+[niobium_tin]
+	ingot = true
+	fluid = true
+
+[niobium_titanium]
+	ingot = true
+	fluid = true
+
+[nitric_acid]
+	fluid = true
+
+[nitric_oxide]
+	fluid = true
+
+[nitrogen]
+	fluid = true
+
+[nitrogen_dioxide]
+	fluid = true
+
+[nuclear_waste]
+	fluid = true
+
+[obsidian]
+	dust = true
+	fluid = true
+
+[osmiridium]
+	ingot = true
+	fluid = true
+
+[osmium]
+	ingot = true
+	dust = true
+	fluid = true
+
+[oxygen]
+	fluid = true
+
+[oxygen_difluoride]
+	fluid = true
+
+[palladium]
+	ingot = true
+	dust = true
+	plate = true
+	fluid = true
+
+[pasteurized_milk]
+	fluid = true
+
+[platinum]
+	deepslate_ore = true
+	raw_ore = true
+	ingot = true
+	dust = true
+	plate = true
+	nugget = true
+	block = true
+	fluid = true
+
+[platinum_clean_slurry]
+	fluid = true
+
+[platinum_slurry]
+	fluid = true
+
+[plutonium238]
+	block = true
+
+[polonium]
+	dust = true
+	fluid = true
+
+[potassium]
+	ingot = true
+	dust = true
+
+[potassium_fluoride]
+	dust = true
+
+[potassium_fluoride_solution]
+	fluid = true
+
+[potassium_hydroxide]
+	dust = true
+	fluid = true
+
+[potassium_hydroxide_solution]
+	fluid = true
+
+[potassium_iodide]
+	dust = true
+	fluid = true
+
+[promethium_147]
+	dust = true
+	fluid = true
+
+[protactinium_231]
+	dust = true
+
+[protactinium_233]
+	dust = true
+
+[purpur]
+	dust = true
+	fluid = true
+
+[pyrolitic_carbon]
+	ingot = true
+	dust = true
+
+[quantite_energy]
+	fluid = true
+
+[quartz]
+	dust = true
+
+[radium]
+	dust = true
+
+[radon]
+	fluid = true
+
+[redstone]
+	fluid = true
+
+[redstone_ethanol]
+	fluid = true
+
+[rhodochrosite]
+	gem = true
+	dust = true
+
+[ruthenium_106]
+	dust = true
+	fluid = true
+
+[samarium]
+	dust = true
+
+[shibuichi]
+	ingot = true
+	dust = true
+	fluid = true
+
+[sic_sic_cmc]
+	ingot = true
+	dust = true
+	plate = true
+	fluid = true
+
+[silicon]
+	gem = true
+	fluid = true
+
+[silicon_carbide]
+	ingot = true
+	dust = true
+	fluid = true
+
+[silver]
+	ore = true
+	deepslate_ore = true
+	raw_ore = true
+	ingot = true
+	dust = true
+	plate = true
+	nugget = true
+	block = true
+	fluid = true
+
+[silver_clean_slurry]
+	fluid = true
+
+[silver_slurry]
+	fluid = true
+
+[slurry_ice]
+	fluid = true
+
+[sodium]
+	ingot = true
+	dust = true
+
+[sodium_clean_slurry]
+	fluid = true
+
+[sodium_fluoride]
+	dust = true
+
+[sodium_fluoride_solution]
+	fluid = true
+
+[sodium_hydroxide]
+	dust = true
+	fluid = true
+
+[sodium_hydroxide_solution]
+	fluid = true
+
+[sodium_slurry]
+	fluid = true
+
+[spent_nuclear_waste]
+	fluid = true
+
+[stainless_steel]
+	ingot = true
+	fluid = true
+
+[steam]
+	fluid = true
+
+[steel]
+	ingot = true
+	dust = true
+	plate = true
+	nugget = true
+	block = true
+	fluid = true
+
+[strontium]
+	ingot = true
+	dust = true
+
+[strontium_90]
+	dust = true
+	fluid = true
+
+[subliquid_matter]
+	fluid = true
+
+[sugar]
+	fluid = true
+
+[sulfur]
+	dust = true
+	fluid = true
+
+[sulfur_dioxide]
+	fluid = true
+
+[sulfur_trioxide]
+	fluid = true
+
+[sulfuric_acid]
+	fluid = true
+
+[super_alloy]
+	ingot = true
+
+[supercold_ice]
+	block = true
+
+[tbp]
+	dust = true
+
+[technical_water]
+	fluid = true
+
+[terbium]
+	dust = true
+
+[thallium]
+	dust = true
+
+[thermoconducting]
+	ingot = true
+	dust = true
+	plate = true
+	fluid = true
+
+[thorium]
+	ore = true
+	deepslate_ore = true
+	raw_ore = true
+	ingot = true
+	dust = true
+	plate = true
+	nugget = true
+	block = true
+	fluid = true
+
+[thorium_clean_slurry]
+	fluid = true
+
+[thorium_slurry]
+	fluid = true
+
+[tin]
+	ore = true
+	raw_ore = true
+	ingot = true
+	dust = true
+	plate = true
+	nugget = true
+	block = true
+	fluid = true
+
+[tin_clean_slurry]
+	fluid = true
+
+[tin_silver]
+	ingot = true
+	dust = true
+	fluid = true
+
+[tin_slurry]
+	fluid = true
+
+[titanium]
+	ingot = true
+	dust = true
+	fluid = true
+
+[tnt]
+	fluid = true
+
+[tough_alloy]
+	ingot = true
+	dust = true
+	plate = true
+	fluid = true
+
+[tritium]
+	fluid = true
+
+[tungsten]
+	ingot = true
+	dust = true
+
+[tungsten_carbide]
+	ingot = true
+
+[unsweetened_chocolate]
+	fluid = true
+
+[uranium]
+	ore = true
+	deepslate_ore = true
+	raw_ore = true
+	ingot = true
+	dust = true
+	plate = true
+	nugget = true
+	block = true
+	fluid = true
+
+[uranium238]
+	block = true
+
+[uranium_clean_slurry]
+	fluid = true
+
+[uranium_oxide]
+	fluid = true
+
+[uranium_slurry]
+	fluid = true
+
+[villiaumite]
+	gem = true
+	dust = true
+
+[yellowcake]
+	dust = true
+
+[ytterbium]
+	dust = true
+
+[yttrium]
+	ingot = true
+	dust = true
+
+[zinc]
+	ore = true
+	raw_ore = true
+	ingot = true
+	dust = true
+	plate = true
+	nugget = true
+	block = true
+	fluid = true
+
+[zinc_clean_slurry]
+	fluid = true
+
+[zinc_slurry]
+	fluid = true
+
+[zircaloy]
+	ingot = true
+	dust = true
+	fluid = true
+
+[zirconium]
+	ingot = true
+	dust = true
+	plate = true
+	nugget = true
+	block = true
+	fluid = true
+
+[zirconium_molybdenum]
+	ingot = true
+	dust = true
+	fluid = true

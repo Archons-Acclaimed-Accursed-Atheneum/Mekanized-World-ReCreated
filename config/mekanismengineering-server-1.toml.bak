@@ -1,0 +1,325 @@
+[surveyor]
+	#Enable the Digital Miner Companion: linking, reading, remote control, estimates and relocations.
+	enabled = true
+	#Minimum ticks between two links of a Companion (Shift + right-click on a miner), per player.
+	# Default: 10
+	# Range: 1 ~ 200
+	cooldownTicks = 10
+	#Run an on-demand, read-only estimate of the blocks currently matching the miner configuration.
+	#The estimate only reads chunks that are already loaded, never starts the miner and is sliced over ticks.
+	estimateEnabled = true
+	#Server-thread time budget per tick, shared by every running estimate, in microseconds.
+	# Default: 2000
+	# Range: 100 ~ 20000
+	estimateBudgetMicros = 2000
+	#Refuse estimates whose configured volume exceeds this many block positions.
+	# Default: 4000000
+	# Range: 1 ~ 50000000
+	estimateMaxBlocks = 4000000
+	#Maximum simultaneous estimates on the server (one per player at most).
+	# Default: 4
+	# Range: 1 ~ 32
+	estimateMaxConcurrent = 4
+
+[distributor]
+	#Enable the Precision Logistical Distributor. When disabled it refuses input and stops distributing.
+	enabled = true
+	#Base ticks between distribution cycles before Speed upgrades (8 upgrades divide this by 10 by default). Values below 40 from older versions are corrected on load.
+	# Default: 40
+	# Range: 40 ~ 1200
+	intervalTicks = 40
+
+[quantum_miner]
+	#Enable the Quantum Digital Miner. When disabled it neither searches nor mines.
+	enabled = true
+	#Largest mining radius players may set, in blocks.
+	# Default: 128
+	# Range: 1 ~ 128
+	maxRadius = 128
+	#Mining speed compared to Mekanism's Digital Miner with the same Speed Upgrades (ticks per block are divided by this).
+	# Default: 4.0
+	# Range: 1.0 ~ 16.0
+	speedMultiplier = 4.0
+	#Energy use and base storage compared to Mekanism's Digital Miner configuration (usage.digitalMiner, storage.digitalMiner).
+	# Default: 4.0
+	# Range: 0.0 ~ 64.0
+	energyMultiplier = 4.0
+	#Hard cap on blocks mined by one Quantum Digital Miner in a single tick.
+	# Default: 8
+	# Range: 1 ~ 64
+	maxBlocksPerTick = 8
+	#Hard cap on target positions examined in a single tick, including positions that changed since the search.
+	# Default: 512
+	# Range: 16 ~ 65536
+	maxChecksPerTick = 512
+	#Server-thread time per tick shared by every running search (copying loaded chunk sections), in microseconds.
+	# Default: 2000
+	# Range: 100 ~ 50000
+	searchBudgetMicros = 2000
+	#Background threads analysing copied chunk sections for all Quantum Digital Miners together.
+	# Default: 1
+	# Range: 1 ~ 4
+	searchThreads = 1
+	#With an Anchor Upgrade, chunks a search may be loading at the same time (short-lived tickets, never blocking).
+	# Default: 8
+	# Range: 1 ~ 64
+	searchMaxPendingChunks = 8
+	#Log search, frequency and relocation details at INFO level (debugging only).
+	verboseLogs = false
+
+[relocation]
+	#Allow moving a Quantum Digital Miner that finished its zone to a neighbouring zone with the Digital Miner Companion.
+	enabled = true
+	#Energy taken from the Companion for one relocation, in Joules (Mekanism's unit).
+	# Default: 80000000
+	# Range: 0 ~ 9223372036854775807
+	energyCost = 80000000
+	#Blocks left untouched between the finished zone and the next one.
+	# Default: 2
+	# Range: 0 ~ 64
+	gap = 2
+	#Largest height difference of the ground under the 5 x 5 platform; rougher places are skipped.
+	# Default: 3
+	# Range: 0 ~ 16
+	maxHeightDifference = 3
+	#Finished zones remembered per miner, oldest forgotten first.
+	# Default: 256
+	# Range: 1 ~ 4096
+	maxHistory = 256
+	#Ticks to wait for the chunks of one candidate place to load before trying the next.
+	# Default: 200
+	# Range: 20 ~ 2400
+	candidateTimeoutTicks = 200
+	#In dimensions with a ceiling (Nether), blocks searched above and below the miner's height for a floor.
+	# Default: 16
+	# Range: 1 ~ 64
+	ceilingSearchRange = 16
+	#Ticks a Quantum Digital Miner charges in place, whole and unchanged, before it moves (departure animation and sounds). 0 moves at once.
+	# Default: 30
+	# Range: 0 ~ 200
+	chargeTicks = 30
+
+[companion]
+	#Energy the Digital Miner Companion stores, in Joules.
+	# Default: 256000000
+	# Range: 1 ~ 9223372036854775807
+	energyCapacity = 256000000
+	#Energy the Companion accepts per tick when charging, in Joules.
+	# Default: 1000000
+	# Range: 1 ~ 9223372036854775807
+	chargeRate = 1000000
+
+[quantum_teleporter]
+	#Allow jumps with the Quantum Portable Teleporter. Off, the item still charges but refuses every jump.
+	enabled = true
+	#Energy the Quantum Portable Teleporter stores, in Joules (1 GJ = 400 MFE).
+	# Default: 1000000000
+	# Range: 1 ~ 9223372036854775807
+	energyCapacity = 1000000000
+	#Energy it accepts per tick when charging, in Joules.
+	# Default: 5000000
+	# Range: 1 ~ 9223372036854775807
+	chargeRate = 5000000
+	#A jump to a Mekanism Teleporter, in percent of the full battery.
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	costTeleporterPercent = 1.0
+	#A jump to checked coordinates, in percent of the full battery.
+	# Default: 50.0
+	# Range: 0.0 ~ 100.0
+	costCoordinatesPercent = 50.0
+	#A jump to a random safe place, in percent of the full battery.
+	# Default: 25.0
+	# Range: 0.0 ~ 100.0
+	costRandomPercent = 25.0
+	#Nearest a random destination can be, in blocks from the player.
+	# Default: 1000
+	# Range: 16 ~ 1000000
+	randomMinDistance = 1000
+	#Farthest a random destination can be, in blocks from the player.
+	# Default: 8000
+	# Range: 16 ~ 1000000
+	randomMaxDistance = 8000
+	#Places tried by one random search before it gives up (at no cost); a search started again before its cooldown is over carries on with the tries already spent.
+	# Default: 8
+	# Range: 1 ~ 32
+	randomTries = 8
+	#Ticks a player waits between two random searches.
+	# Default: 160
+	# Range: 0 ~ 12000
+	searchCooldownTicks = 160
+	#Ticks after a jump before the same player can jump again (checked by the server).
+	# Default: 20
+	# Range: 0 ~ 12000
+	jumpCooldownTicks = 20
+	#Destination chunks the whole server may be loading for checks at once (one per player at most).
+	# Default: 2
+	# Range: 1 ~ 64
+	maxConcurrentChecks = 2
+	#Ticks a checked destination stays loaded, waiting for the jump, before its short ticket is given back.
+	# Default: 200
+	# Range: 20 ~ 1200
+	destinationHoldTicks = 200
+	#Dimensions the Quantum Portable Teleporter never jumps to or from, as ids (e.g. "minecraft:the_end").
+	blockedDimensions = []
+	#Allow the Coordinates tab (jumps to checked coordinates). Off, players can still jump to a Teleporter's frequency or to a random place.
+	allowCoordinates = true
+	#Allow the Random tab (jumps to a random safe place). Off, players can still jump to a Teleporter's frequency or to coordinates.
+	allowRandom = true
+	#Dimensions where the Coordinates and Random tabs are blocked while the player is in them, as ids (e.g. "minecraft:the_end"). Unlike blockedDimensions, jumps to a Teleporter's frequency still work there, so players can leave, and jumps to coordinates in these dimensions from elsewhere are still allowed.
+	coordinateAndRandomBlockedDimensions = []
+
+[quantum_chargepad]
+	#Energy the Quantum Chargepad stores, in Joules (Mekanism's Chargepad: 2,048,000).
+	# Default: 1000000000
+	# Range: 1 ~ 9223372036854775807
+	energyStorage = 1000000000
+	#Energy it gives each player standing on it per tick, in Joules, shared by all their items at once; each item
+	#still takes no more than its own charge rate. Mekanism's Chargepad: 1,024,000 for one item at a time.
+	# Default: 256000000
+	# Range: 1 ~ 9223372036854775807
+	transferRate = 256000000
+
+[upgrade_controller]
+	#Upgrades of one type the Precision Upgrade Controller stores.
+	# Default: 1024
+	# Range: 1 ~ 65536
+	vaultCapacityPerType = 1024
+	#Cubic radius every Controller works over, in blocks. Players cannot change it; its screen shows it with Mekanism's Visuals tab.
+	# Default: 8
+	# Range: 1 ~ 64
+	radius = 8
+	#Energy the Controller draws per tick while it scans or moves upgrades, in Joules. Speed Upgrades raise it and Energy Upgrades lower it, by Mekanism's own rule.
+	# Default: 400
+	# Range: 0 ~ 9223372036854775807
+	energyUsage = 400
+	#Energy the Controller stores, in Joules.
+	# Default: 200000
+	# Range: 1 ~ 9223372036854775807
+	energyStorage = 200000
+
+[quantum_fluid_pump]
+	#Water the Industrial Fluid Pump delivers without Speed Upgrades, in mB per tick. Speed Upgrades multiply it by Mekanism's maxUpgradeMultiplier at eight (x10 by default).
+	# Default: 16000
+	# Range: 1 ~ 10000000
+	baseRate = 16000
+	#Share of the water flow for lava and other fluids whose source blocks are taken.
+	# Default: 0.75
+	# Range: 0.0 ~ 1.0
+	lavaShare = 0.75
+	#Share of the water flow for lava kept in place by the Source Stabilizer Upgrade.
+	# Default: 0.75
+	# Range: 0.0 ~ 1.0
+	stabilizedLavaShare = 0.75
+	#With a Filter Upgrade, heavy water = water flow x (Mekanism's heavyWaterAmount / 1000) x this share.
+	# Default: 0.75
+	# Range: 0.0 ~ 1.0
+	heavyWaterShare = 0.75
+	#Most source blocks the pump may take from the world in one tick (lava without the Source Stabilizer, other fluids). Each is a block change: lighting, neighbours, packets.
+	# Default: 16
+	# Range: 1 ~ 64
+	maxSourcesPerTick = 16
+	#Radius around the intake, in blocks, in which consumed sources are searched.
+	# Default: 32
+	# Range: 4 ~ 64
+	sourceRadius = 32
+	#Most blocks the source search reads in one tick.
+	# Default: 256
+	# Range: 16 ~ 4096
+	searchBudget = 256
+	#Energy the pump draws per tick of work without upgrades, in Joules. Speed and Energy Upgrades change it by Mekanism's own rule.
+	# Default: 32000
+	# Range: 0 ~ 9223372036854775807
+	energyUsage = 32000
+	#Energy the pump stores without Energy Upgrades, in Joules.
+	# Default: 16000000
+	# Range: 1 ~ 9223372036854775807
+	energyStorage = 16000000
+	#Energy multiplier while the Source Stabilizer Upgrade keeps a lava source in place.
+	# Default: 4.0
+	# Range: 1.0 ~ 64.0
+	stabilizerEnergyMultiplier = 4.0
+	#Capacity of the pump's buffer tank, in mB.
+	# Default: 2000000
+	# Range: > 1000
+	tankCapacity = 2000000
+	#Largest intake pipe network the pump walks; a larger one is reported instead of walked.
+	# Default: 2048
+	# Range: 1 ~ 65536
+	intakeMaxPipes = 2048
+	#Pipes of the intake network the pump walks in one tick.
+	# Default: 64
+	# Range: 1 ~ 4096
+	intakePipesPerTick = 64
+	#Ticks between two checks that the intake is still in place (a check costs a few map lookups).
+	# Default: 20
+	# Range: 1 ~ 1200
+	intakeRecheckTicks = 20
+	#Allow an immersed Mechanical Pipe (placed in a source, or filled with a bucket) to prime the pump. Adjacent sources never prime it; false disables new intakes.
+	fluidloggedPipeIntake = true
+	#Pump fluids other than water and lava (from other mods): their sources are taken like lava's.
+	otherFluids = true
+	#Least energy each mB of lava kept in place by the Source Stabilizer costs, in Joules, whatever the Energy Upgrades: above what generators get from lava, so the pump is never an energy source.
+	# Default: 50.0
+	# Range: 0.0 ~ 1000000.0
+	stabilizedLavaEnergyPerMb = 50.0
+
+[petrogenic_synthesis]
+	#Ticks the Petrogenic Synthesizer takes for one Cobblestone without Speed Upgrades (other products take their recipe's time multiple).
+	# Default: 10.0
+	# Range: 0.05 ~ 72000.0
+	synthesizerTicks = 10.0
+	#Energy the Petrogenic Synthesizer draws per tick on Cobblestone without upgrades, in Joules. Speed and Energy Upgrades change it by Mekanism's own rule; other products by their recipe.
+	# Default: 100
+	# Range: 0 ~ 9223372036854775807
+	synthesizerEnergyUsage = 100
+	#Energy the Petrogenic Synthesizer stores without Energy Upgrades, in Joules.
+	# Default: 160000
+	# Range: 1 ~ 9223372036854775807
+	synthesizerEnergyStorage = 160000
+	#Capacity of each of the Petrogenic Synthesizer's two tanks (water, lava), in mB. Small on purpose: at high speed the supply must keep up.
+	# Default: 16000
+	# Range: > 1000
+	synthesizerTankCapacity = 16000
+	#Ticks one of the Petrogenic Synthesis Plant's eight lines takes for one Cobblestone without Speed Upgrades.
+	# Default: 5.0
+	# Range: 0.05 ~ 72000.0
+	plantLineTicks = 5.0
+	#Energy the Petrogenic Synthesis Plant draws per tick with its eight lines on Cobblestone, without upgrades, in Joules.
+	# Default: 1280
+	# Range: 0 ~ 9223372036854775807
+	plantEnergyUsage = 1280
+	#Energy the Petrogenic Synthesis Plant stores without Energy Upgrades, in Joules.
+	# Default: 64000000
+	# Range: 1 ~ 9223372036854775807
+	plantEnergyStorage = 64000000
+	#Capacity of each of the Petrogenic Synthesis Plant's two buffers (water, lava), in mB.
+	# Default: 2000000
+	# Range: > 1000
+	plantTankCapacity = 2000000
+	#Water one Hydro Condenser Upgrade makes at most, in mB per tick.
+	# Default: 1000
+	# Range: 0 ~ 1000000
+	hydroCondenserRate = 1000
+	#Energy each mB of water made by the Hydro Condenser Upgrades costs, in Joules. Energy Upgrades do not lower it.
+	# Default: 5.0
+	# Range: 0.0 ~ 1000000.0
+	hydroCondenserEnergyPerMb = 5.0
+	#Lava one Magma Synthesizer Upgrade makes at most, in mB per tick.
+	# Default: 1000
+	# Range: 0 ~ 1000000
+	magmaSynthesizerRate = 1000
+	#Energy each mB of lava made by the Magma Synthesizer Upgrades costs, in Joules. Energy Upgrades do not lower it; keep it above what generators get from lava.
+	# Default: 1000.0
+	# Range: 0.0 ~ 1000000.0
+	magmaSynthesizerEnergyPerMb = 1000.0
+
+[quantum_network]
+	#Log one line to latest.log for every snapshot the Quantum Network Controller or Tablet builds: time per stage, sizes, how long the request waited.
+	#Measures only; changes nothing the Controller shows or saves. Off by default; for latency measurements only.
+	timingLogs = false
+	#How long the Controller or Tablet screen may show the figures it last had for a frequency and a resource, in seconds, while the first measure of a freshly opened screen or tab runs.
+	#The live figures replace them as soon as they exist (about one or two seconds). 0 = never show earlier figures.
+	# Default: 30
+	# Range: 0 ~ 300
+	cacheSeconds = 30

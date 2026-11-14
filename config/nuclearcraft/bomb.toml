@@ -1,0 +1,33 @@
+[pu_239_bomb]
+	#Horizontal blast radius in blocks (default 196).
+	# Default: 196
+	# Range: 16 ~ 384
+	radius_horizontal = 196
+	#Vertical blast radius in blocks (default 64).
+	# Default: 64
+	# Range: 8 ~ 256
+	radius_vertical = 64
+	#Ticks between redstone arming and detonation (default 60 = 3 s).
+	# Default: 60
+	# Range: 1 ~ 12000
+	fuse_ticks = 60
+	#Block ops applied per server tick during detonation (default 16384).
+	# Default: 16384
+	# Range: 64 ~ 65536
+	ops_per_tick = 16384
+	#Whole-chunk packets resent to clients per server tick during detonation. Raise to make the blast visible faster; bandwidth scales with player count.
+	# Default: 16
+	# Range: 1 ~ 1024
+	chunk_resends_per_tick = 16
+	#If true, bombs mutate chunk sections directly and resend whole chunks instead of using server.setBlock per op. ~50-100x faster but skips neighbor updates, fluid flow, falling-block triggers, and block events inside the blast. Set false to fall back to the vanilla setBlock path.
+	fast_block_writes = true
+	#Spawn a Persistent radiation source at the epicenter and stamp soil-profile fallout on every chunk inside the blast radius. Requires NuclearRadiation to be installed.
+	radiation_enabled = true
+	#Atom-count multiplier applied to per-chunk fallout (distance-scaled). 1.0 mirrors the fission meltdown chunk stamp; raise for hotter fallout near the edge.
+	# Default: 1.0
+	# Range: 0.0 ~ 4.0
+	radiation_fallout_areal_density = 1.0
+	#Atom-count multiplier applied to the epicenter LeftOverRadSource. Tune against meltdown magnitudes for consistent feel.
+	# Default: 1.0
+	# Range: 0.0 ~ 8.0
+	radiation_source_yield_scale = 1.0

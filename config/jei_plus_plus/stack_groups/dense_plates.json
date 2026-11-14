@@ -1,0 +1,7 @@
+{
+  "id": "mekanized_world:dense_plates",
+  "type": "remi:group",
+  "contents": [
+    "#c:dense_plates"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": "mekanized_world:wire_spools",
+  "type": "remi:group",
+  "contents": [
+    "#c:wire_spools"
+  ]
+}

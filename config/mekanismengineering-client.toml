@@ -1,0 +1,54 @@
+#Show a notification, with Minecraft's notification sound, when your Quantum Digital Miner finishes mining, is held up or has moved.
+#Off: no notification and no sound for any notification of the mod.
+notifications = true
+#Distributor routing window: hide the neighbouring blocks and show a small square of the side's colour in their place.
+#Set by the eye button of the window.
+routing_hide_neighbours = false
+
+#Where each window of the mod was last left and whether it is pinned. Written by the game when a window is moved or pinned.
+[windows]
+
+	[windows.distributor_routing]
+		# Default: 2147483647
+		# Range: > -2147483648
+		x = 2147483647
+		# Default: 2147483647
+		# Range: > -2147483648
+		y = 2147483647
+		pinned = false
+
+	[windows.receiver_faces]
+		# Default: 2147483647
+		# Range: > -2147483648
+		x = 2147483647
+		# Default: 2147483647
+		# Range: > -2147483648
+		y = 2147483647
+		pinned = false
+
+	[windows.receiver_frequency]
+		# Default: 2147483647
+		# Range: > -2147483648
+		x = 2147483647
+		# Default: 2147483647
+		# Range: > -2147483648
+		y = 2147483647
+		pinned = false
+
+	[windows.chargepad_frequency]
+		# Default: 2147483647
+		# Range: > -2147483648
+		x = 2147483647
+		# Default: 2147483647
+		# Range: > -2147483648
+		y = 2147483647
+		pinned = false
+
+	[windows.refinery_frequency]
+		# Default: 2147483647
+		# Range: > -2147483648
+		x = 2147483647
+		# Default: 2147483647
+		# Range: > -2147483648
+		y = 2147483647
+		pinned = false

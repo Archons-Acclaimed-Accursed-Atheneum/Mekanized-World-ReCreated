@@ -1,0 +1,375 @@
+[anomalies]
+	#Master switch for the Wasteland anomaly system
+	enabled = true
+	#Enable per-variant anomaly post-process shaders. Disable on weak GPUs.
+	shader = true
+	#Probability (0..1) that a placement cell contains an anomaly
+	# Default: 0.45
+	# Range: 0.0 ~ 1.0
+	spawn_chance_per_cell = 0.45
+	#Side length in blocks of each square placement cell
+	# Default: 128
+	# Range: 16 ~ 4096
+	cell_size = 128
+	#Cells around each player scanned for spawning
+	# Default: 2
+	# Range: 0 ~ 8
+	activation_cell_radius = 2
+
+	[anomalies.variants]
+		enable_gravitational = true
+		# Default: 2
+		# Range: 0 ~ 1000
+		weight_gravitational = 2
+		enable_electric = true
+		# Default: 3
+		# Range: 0 ~ 1000
+		weight_electric = 3
+		enable_radioactive = true
+		# Default: 3
+		# Range: 0 ~ 1000
+		weight_radioactive = 3
+		enable_burning = true
+		# Default: 3
+		# Range: 0 ~ 1000
+		weight_burning = 3
+		enable_psycho = true
+		# Default: 2
+		# Range: 0 ~ 1000
+		weight_psycho = 2
+		enable_teleporting = true
+		# Default: 2
+		# Range: 0 ~ 1000
+		weight_teleporting = 2
+
+	[anomalies.gravitational]
+		# Default: 12.0
+		# Range: 1.0 ~ 32.0
+		radius = 12.0
+		# Default: 0.3
+		# Range: 0.0 ~ 2.0
+		pull = 0.3
+		# Default: 0.05
+		# Range: 0.0 ~ 1.0
+		launch_chance = 0.05
+		# Default: 2.0
+		# Range: 0.0 ~ 10.0
+		launch_power = 2.0
+		# Default: 320
+		# Range: 1 ~ 100000
+		absorb_threshold = 320
+		# Default: 50
+		# Range: 1 ~ 1200
+		absorb_interval_ticks = 50
+		block_absorb = true
+		explosion_on_collapse = true
+		# Default: 18.0
+		# Range: 0.0 ~ 64.0
+		explosion_power = 18.0
+		# Default: 1.0
+		# Range: 0.0 ~ 8.0
+		mass_scale = 1.0
+
+	[anomalies.electric]
+		# Default: 28.0
+		# Range: 1.0 ~ 64.0
+		radius = 28.0
+		# Default: 16.0
+		# Range: 0.0 ~ 1000.0
+		damage = 16.0
+		# Default: 50
+		# Range: 1 ~ 1200
+		strike_interval_ticks = 50
+		# Default: 100000000
+		# Range: > 1
+		discharge_fe_threshold = 100000000
+
+	[anomalies.radioactive]
+		# Default: 48
+		# Range: 4 ~ 256
+		radius = 48
+		# Default: 100000
+		# Range: 0 ~ 9223372036854775807
+		dose = 100000
+		# Default: 20
+		# Range: 1 ~ 1200
+		emit_interval_ticks = 20
+
+	[anomalies.burning]
+		# Default: 10.0
+		# Range: 1.0 ~ 64.0
+		radius = 10.0
+		# Default: 2.0
+		# Range: 0.0 ~ 64.0
+		explosion_radius = 2.0
+		# Default: 200
+		# Range: 1 ~ 24000
+		explosion_min_ticks = 200
+		# Default: 400
+		# Range: 1 ~ 24000
+		explosion_max_ticks = 400
+		# Default: 8
+		# Range: 1 ~ 1000
+		water_blocks_to_neutralize = 8
+		block_ignite = true
+		periodic_explosion = true
+
+	[anomalies.psycho]
+		# Default: 48.0
+		# Range: 1.0 ~ 128.0
+		radius = 48.0
+		# Default: 40
+		# Range: 1 ~ 1200
+		interval_ticks = 40
+		# Default: 0
+		# Range: 0 ~ 10
+		effect_amplifier = 0
+		# Default: 40
+		# Range: 1 ~ 1200
+		vex_spawn_interval_ticks = 40
+		# Default: 6
+		# Range: 0 ~ 64
+		vex_max_nearby = 6
+		# Default: 1200
+		# Range: 0 ~ 24000
+		vex_lifetime_ticks = 1200
+
+	[anomalies.teleporting]
+		# Default: 5.0
+		# Range: 1.0 ~ 32.0
+		victim_radius = 5.0
+		# Default: 100
+		# Range: 1 ~ 1000
+		victim_max_distance = 100
+		# Default: 60
+		# Range: 1 ~ 1200
+		self_blink_min_ticks = 60
+		# Default: 120
+		# Range: 1 ~ 1200
+		self_blink_max_ticks = 120
+		# Default: 12.0
+		# Range: 1.0 ~ 32.0
+		self_blink_radius = 12.0
+		# Default: 3
+		# Range: 0 ~ 32
+		hover_offset = 3
+
+	[anomalies.shards]
+		shard_drops_enabled = true
+		# Default: 1
+		# Range: 0 ~ 64
+		shard_drop_min = 1
+		# Default: 2
+		# Range: 0 ~ 64
+		shard_drop_max = 2
+		# Default: 1.0
+		# Range: 0.0 ~ 1.0
+		shard_drop_chance = 1.0
+
+	[anomalies.crystal]
+		# Default: 85
+		# Range: 0 ~ 1000000
+		rarity_weight_common = 85
+		# Default: 8
+		# Range: 0 ~ 1000000
+		rarity_weight_rare = 8
+		# Default: 6
+		# Range: 0 ~ 1000000
+		rarity_weight_epic = 6
+		# Default: 1
+		# Range: 0 ~ 1000000
+		rarity_weight_legendary = 1
+		#Ticks between passive buff re-applications
+		# Default: 120
+		# Range: 1 ~ 1200
+		buff_refresh_ticks = 120
+		#Duration of the applied buff effect
+		# Default: 240
+		# Range: 1 ~ 24000
+		buff_duration_ticks = 240
+		#Effect ids excluded from crystal buff pool
+		buff_effect_blacklist = ["minecraft:hero_of_the_village", "minecraft:dolphins_grace", "minecraft:conduit_power"]
+
+[tags]
+	#Mod id priority for resolving tag-based recipe outputs.
+	#Earlier entries win; namespaces not listed rank last (tiebreak = tag order).
+	mod_tag_priority = ["minecraft", "nuclearcraft", "mekanism", "immersiveengineering"]
+
+[misc]
+	#Debug logging output.
+	#Enable in case of issues for investigation, otherwise might reduce performance.
+	debug_logging = false
+
+[pipes]
+	#Ticks between active pipe transfer passes
+	# Default: 1
+	# Range: 1 ~ 200
+	transfer_interval_ticks = 1
+	#Max items a PULL connector moves per active transfer pass
+	# Default: 512
+	# Range: > 1
+	item_throughput = 512
+	#Max mB a PULL connector moves per active transfer pass
+	# Default: 512000
+	# Range: > 1
+	fluid_throughput = 512000
+	#Max FE a PULL connector moves per active transfer pass
+	# Default: 512000
+	# Range: > 1
+	energy_throughput = 512000
+	#Node budget for a single pipe network's flood-fill discovery; caps recompute cost
+	# Default: 4096
+	# Range: > 16
+	max_network_size = 4096
+
+[qnp]
+	#QNP internal FE capacity
+	# Default: 2097152
+	# Range: > 1
+	energy_storage = 2097152
+	#FE consumed per block mined
+	# Default: 400
+	# Range: > 1
+	energy_per_block = 200
+
+[hev]
+	#HEV armor FE capacity per piece
+	# Default: 1000000
+	# Range: > 1000
+	energy_storage = 1000000
+
+[gas_scrubber]
+	#Radiation activity in Bq cancelled by an operating gas scrubber within 64 blocks
+	# Default: 1.0E10
+	# Range: 0.0 ~ 1.7976931348623157E308
+	radiation_reduction_bq = 1.0E10
+
+[in_situ_leaching]
+	#Enable virtual vein generation
+	enable_veins = true
+	#Min/max blocks per vein
+	blocks_per_vein = [50000, 1000000]
+	#Higher = less veins (1-5000)
+	# Default: 70
+	# Range: 1 ~ 5000
+	veins_rarity = 70
+	#All veins get random ores, ignoring vein settings
+	randomized_ores = false
+	#Allow leaching IE veins via core sample
+	allow_to_leach_ie_veins = true
+
+[energy_generation]
+	#Multiplier for all FE generation in the mod
+	# Default: 1.0
+	# Range: 0.001 ~ 1000.0
+	generation_multiplier = 1.0
+	#Decay generator FE per tick for each adjacent decaying block without radiation data
+	# Default: 50
+	# Range: > 0
+	decay_generator_base_fe = 50
+
+	[energy_generation.rtg]
+		#FE per tick
+		# Default: 112
+		# Range: > 0
+		uranium_rtg = 112
+		#FE per tick
+		# Default: 448
+		# Range: > 0
+		americium_rtg = 448
+		#FE per tick
+		# Default: 1792
+		# Range: > 0
+		plutonium_rtg = 1792
+		#FE per tick
+		# Default: 4096
+		# Range: > 0
+		californium_rtg = 4096
+
+	[energy_generation.solar_panel]
+		#FE per tick in direct sunlight
+		# Default: 28
+		# Range: > 0
+		solar_panel_basic = 28
+		#FE per tick in direct sunlight
+		# Default: 112
+		# Range: > 0
+		solar_panel_advanced = 112
+		#FE per tick in direct sunlight
+		# Default: 448
+		# Range: > 0
+		solar_panel_du = 448
+		#FE per tick in direct sunlight
+		# Default: 1792
+		# Range: > 0
+		solar_panel_elite = 1792
+
+[energy_storage]
+	#FE added to a battery block when lightning strikes a lightning rod attached to it. 0 disables
+	# Default: 1048576
+	# Range: > 0
+	lightning_rod_charge = 1048576
+	#FE capacity
+	# Default: 1600000
+	# Range: > 1
+	basic_voltaic_pile = 1600000
+	#FE capacity
+	# Default: 6400000
+	# Range: > 1
+	advanced_voltaic_pile = 6400000
+	#FE capacity
+	# Default: 25600000
+	# Range: > 1
+	du_voltaic_pile = 25600000
+	#FE capacity
+	# Default: 102400000
+	# Range: > 1
+	elite_voltaic_pile = 102400000
+	#FE capacity
+	# Default: 32000000
+	# Range: > 1
+	basic_lithium_ion_battery = 32000000
+	#FE capacity
+	# Default: 128000000
+	# Range: > 1
+	advanced_lithium_ion_battery = 128000000
+	#FE capacity
+	# Default: 512000000
+	# Range: > 1
+	du_lithium_ion_battery = 512000000
+	#FE capacity
+	# Default: 2048000000
+	# Range: > 1
+	elite_lithium_ion_battery = 2048000000
+
+[barrels]
+	#Capacity in buckets
+	# Default: 128
+	# Range: 1 ~ 2147483
+	basic_barrel = 128
+	#Capacity in buckets
+	# Default: 512
+	# Range: 1 ~ 2147483
+	advanced_barrel = 512
+	#Capacity in buckets
+	# Default: 2048
+	# Range: 1 ~ 2147483
+	du_barrel = 2048
+	#Capacity in buckets
+	# Default: 8192
+	# Range: 1 ~ 2147483
+	elite_barrel = 8192
+
+[villages]
+	#Generate nuclear scientist houses in vanilla villages
+	scientist_house = true
+	#Add NuclearCraft trades to the wandering trader
+	wandering_trader_trades = true
+
+[designs_hub]
+	#Enable the Designs Hub browse/upload screens (online, sends data to an external server)
+	enabled = true
+	#Designs Hub API base URL
+	base_url = "https://nc-fission-designs-api.itman.website"
+	#Designs Hub admin secret for deleting designs; leave empty to hide delete controls
+	admin_secret = ""

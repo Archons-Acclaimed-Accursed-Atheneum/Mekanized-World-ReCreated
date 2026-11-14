@@ -1,0 +1,15 @@
+{
+  "showDevInfoByDefault": true,
+  "showFlagDisabledChapters": true,
+  "showFlagDisabledQuests": true,
+  "generateMdSidecarFiles": false,
+  "lineStyle": "STRAIGHT",
+  "devModeDisabled": false,
+  "autoRegisterScreens": false,
+  "lastChapter": "TEST",
+  "questbookName": "Mekanized World: ReCreated",
+  "questbookIcon": "kubejs:darrel",
+  "taskInspectorW": -1,
+  "taskRewardW": -1,
+  "alwaysProfilerEnabled": false
+}

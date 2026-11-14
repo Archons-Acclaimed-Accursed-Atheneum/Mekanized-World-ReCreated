@@ -1,0 +1,8 @@
+*
+!kubejs/
+!kubejs/**
+!config/
+!config/**
+!mods/
+!mods/**
+!.gitignore

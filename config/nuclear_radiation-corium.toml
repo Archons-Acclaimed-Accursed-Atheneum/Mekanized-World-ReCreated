@@ -1,0 +1,33 @@
+[corium]
+	#Game ticks between corium hazard updates (melt/burn/solidify). Lower = more aggressive and costlier.
+	# Default: 10
+	# Range: 1 ~ 100
+	tick_interval = 10
+	#Radius in blocks around each corium source block within which entities are ignited/damaged. 0 disables.
+	# Default: 5.0
+	# Range: 0.0 ~ 32.0
+	burn_radius = 5.0
+	#Seconds of fire applied to entities within the burn radius.
+	# Default: 8
+	# Range: 0 ~ 60
+	fire_seconds = 8
+	#Direct damage per update dealt to entities within the burn radius. 0 disables.
+	# Default: 4.0
+	# Range: 0.0 ~ 100.0
+	burn_damage = 4.0
+	#Melt aggressiveness for the block beneath corium. Per-update melt chance = rate / (hardness + 1). 0 disables melting.
+	# Default: 0.4
+	# Range: 0.0 ~ 10.0
+	melt_rate = 0.4
+	#Multiplier applied to melt_rate for flowing (non-source) corium. Lower values make flowing corium melt blocks much slower. 1.0 = same as source, 0.0 = flowing corium cannot melt.
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	flowing_melt_multiplier = 0.05
+	#Mean game ticks before a corium source block solidifies into corium_block (randomized).
+	# Default: 2400
+	# Range: 20 ~ 200000
+	solidify_ticks = 2400
+	#Water contacts required to quench a corium block into corium_block. Each adjacent water block evaporates and counts once per update.
+	# Default: 3
+	# Range: 1 ~ 100
+	water_cooling_contacts = 3

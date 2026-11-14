@@ -1,0 +1,49 @@
+{
+  "chapter": "TEST",
+  "description": "You've returned; Maybe you're new. Welcome to Mekanized World: ReCreated",
+  "icon_item": "create:brass_hand",
+  "id": "good_morning",
+  "parent": "none",
+  "positionX": 345,
+  "positionY": 224,
+  "position_is_center": 1b,
+  "repeat_cooldown_hours": 24,
+  "repeat_mode": "NONE",
+  "rewards": [
+    {
+      "count": 1,
+      "item_id": "kubejs:darrel",
+      "push_to_ae2": 1b,
+      "type": "item"
+    },
+    {
+      "count": 1,
+      "item_id": "sophisticatedbackpacks:diamond_backpack",
+      "nbt": {
+        "components": {
+          "sophisticatedcore:number_of_inventory_slots": 108,
+          "sophisticatedcore:number_of_upgrade_slots": 5
+        }
+      },
+      "push_to_ae2": 1b,
+      "type": "item"
+    },
+    {
+      "count": 16,
+      "item_id": "extradelight:cookie_dough_ice_cream",
+      "push_to_ae2": 1b,
+      "type": "item"
+    }
+  ],
+  "shape": "CROSS",
+  "tasks": [
+    {
+      "description": '"Click here to begin your adventure"',
+      "optional": 0b,
+      "task_id": "phoenix_chronicles:task_checkmark_b6944a8ca8a04b9b822cb06fb6adc9de",
+      "type": "checkmark"
+    }
+  ],
+  "title": "Good Morning",
+  "visibility": "NORMAL"
+}

@@ -1,0 +1,53 @@
+[policy]
+	#If true, players cannot disable durability cost. It is always respected regardless of their own setting.
+	lockRespectDurability = false
+	#If true, players cannot disable vein-mining's hunger cost.
+	lockRespectHunger = false
+	#If true, players cannot disable Fortune/Silk Touch being respected on vein-mined drops.
+	lockRespectEnchantments = false
+	#If true, players cannot disable vein-mined drops being collected directly into their inventory. It is always on regardless of their own setting.
+	lockCollectToPlayer = false
+	#If true, players cannot disable vein-mined ores respecting tool tier.It is always on regardless of their own setting.
+	lockToolTier = false
+	#If true, players cannot disable vein-placing consuming one matching item per block placed. It always costs inventory regardless of their own setting (creative-mode players are never charged either way).
+	lockPlaceConsumesInventory = false
+	#If true, players cannot disable vein-placing overwriting existing blocks that match the active match mode (e.g. re-skinning a wall). It always can, regardless of their own setting. Overwritten blocks are always given back to the player either way; bedrock (and anything else unbreakable) can never be overwritten regardless of this.
+	lockPlaceReplacesMatching = false
+	#If true, players cannot raise (or lower) their own max vein size at all. It is fixed to maxVeinSizeCap for everyone, with no per-player adjustment. Useful if a pack considers even letting players opt into a big vein size too easy/game-breaking on its own.
+	lockMaxVeinSize = false
+	#Hard ceiling on how many blocks a single vein-mine can break, regardless of any player's own max-vein-size preference.
+	# Default: 256
+	# Range: 1 ~ 16096
+	maxVeinSizeCap = 256
+	#Vein-mining shape ids players may not select at all (e.g. "tunnel"). Built-ins: blob, tunnel, layer, wall, staircase, shapeless.
+	disabledShapes = []
+	#Match-mode ids players may not select at all (e.g. "match_any"). Built-ins: exact, match_ore, match_any.
+	disabledMatchModes = []
+	#If true, vein-harvesting replants every crop it harvests (using one seed from the drops where the crop gives one back). If false, harvested crops are removed.
+	harvestReplants = true
+	#Extra item ids that vein tool-use may repeat across a vein, on top of the built-in tools (axes, hoes, shovels, pickaxes, shears, honeycomb). Example: "minecraft:brush".
+	useExtraItems = []
+
+[matchLists]
+	#Default entries for the first ("ore") match list. Both its initial contents on first launch and what the in-game Reset button restores it to. Each entry is "TAG:<id>" or "BLOCK:<id>" (e.g. "TAG:c:ores/iron"). Uses the common ore tag convention (c:ores/<name>) rather than vanilla's per-variant-family tags, so modded ores that register into the Forge common tags are recognized too. Repoint this at anything you like. It doesn't have to actually be ores.
+	oreListDefaults = ["TAG:c:ores", "TAG:c:ores/coal", "TAG:c:ores/iron", "TAG:c:ores/copper", "TAG:c:ores/gold", "TAG:c:ores/redstone", "TAG:c:ores/lapis", "TAG:c:ores/diamond", "TAG:c:ores/emerald", "TAG:c:ores/quartz", "TAG:c:ores/netherite_scrap"]
+	#Default entries for the second ("any") match list, used by Match Any List mode. Unlike the ore list, this ISN'T a whitelist. Match Any List already matches every block by default (stone, dirt, untagged modded blocks, everything). Entries here only matter for blocks that are ALSO in the ore list: those are excluded from Any mode unless also listed here, letting ores stay reserved for Match Ore List mode if desired. Default re-includes the ore tags plus logs/leaves. Same "TAG:<id>"/"BLOCK:<id>" entry format as oreListDefaults.
+	anyListDefaults = ["TAG:c:ores", "TAG:c:ores/coal", "TAG:c:ores/iron", "TAG:c:ores/copper", "TAG:c:ores/gold", "TAG:c:ores/redstone", "TAG:c:ores/lapis", "TAG:c:ores/diamond", "TAG:c:ores/emerald", "TAG:c:ores/quartz", "TAG:c:ores/netherite_scrap", "TAG:minecraft:logs", "TAG:minecraft:leaves"]
+	#If true, players cannot add, remove, or reset entries in the ore list at all. It is fixed to oreListDefaults.
+	lockOreList = false
+	#If true, players cannot add, remove, or reset entries in the any list at all. It is fixed to anyListDefaults.
+	lockAnyList = false
+
+[performance]
+	#How many extra blocks a single vein-mine may destroy per server tick. Breaking a whole large vein in one tick is what causes the noticeable stutter/hitch big vein-mines are known for. Spreading it across several ticks instead keeps each tick's cost small. Lower this further if you still see hitching on a slow server; raise it if veins feel too slow to finish.
+	# Default: 16
+	# Range: 1 ~ 16096
+	veinBlocksPerTick = 16
+	#Minimum number of ticks that must pass between one vein-mine trigger and the next, per player. Without this, another mod's own multi-block AOE mining tool (e.g. a GregTech drill) breaking several blocks in a single action fires one genuine block-break event per block. And each of those could independently satisfy the vein-mine trigger, spawning its own full vein job on top of the others and compounding into a runaway break radius. This debounce is far shorter than any legitimate gap between a player's own deliberate vein-mine actions, so it doesn't affect normal play.
+	# Default: 5
+	# Range: 0 ~ 200
+	veinTriggerDebounceTicks = 5
+
+[requirements]
+	#If set, vein-mining only triggers when the player's held tool carries this enchantment (registry id, e.g. "minecraft:silk_touch", or a modded enchant's id). Leave blank (default) to require nothing. This only gates whether a break continues into a full vein-mine. It doesn't touch vanilla mining of the single block itself. For anything more elaborate than "needs one specific enchant" (a custom item, an NBT flag, a whole other mod's mechanic), use ExcavateAPI.registerItemGate(...) instead. This config option is just the no-code path for the common case.
+	requiredEnchantment = ""

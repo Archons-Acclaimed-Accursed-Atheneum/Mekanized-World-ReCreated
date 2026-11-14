@@ -1,0 +1,18 @@
+{
+  "respectHunger": true,
+  "generalMiningExhaustion": true,
+  "respectDurability": true,
+  "respectEnchantments": true,
+  "collectToPlayer": true,
+  "respectToolTier": true,
+  "placeConsumesInventory": true,
+  "placeReplacesMatching": false,
+  "maxVeinSize": 64,
+  "includeDiagonalNeighbors": true,
+  "holdToActivate": true,
+  "matchModeId": "match_any",
+  "veinMode": "REPLACE",
+  "veinShapeId": "shapeless",
+  "theme": "DARK",
+  "outlineColorHex": ""
+}

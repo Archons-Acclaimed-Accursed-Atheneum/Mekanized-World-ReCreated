@@ -1,0 +1,11 @@
+["Server Configs"]
+	#Highest Y level at which the Oil Scanner works
+	"Max Oil Scanner Level" = 10000
+	#Maximum width of Oil Barrels
+	"Max Oil Barrel Width" = 3
+	#Maximum Oil Barrel length for each unit of width
+	"Max Oil Barrel Length (per width)" = 4
+	#Canister can be filled by spouts
+	"Canister can be filled by spouts" = true
+	#Combustibles do boom boom when on fire
+	"Combustibles blow up" = true

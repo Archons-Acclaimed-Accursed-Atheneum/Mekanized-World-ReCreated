@@ -1,0 +1,7 @@
+{
+  "id": "mekanized_world:ingots",
+  "type": "remi:group",
+  "contents": [
+    "#c:ingots"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": "mekanized_world:storage_blocks",
+  "type": "remi:group",
+  "contents": [
+    "#c:storage_blocks"
+  ]
+}

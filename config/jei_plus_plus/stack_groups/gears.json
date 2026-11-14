@@ -1,0 +1,7 @@
+{
+  "id": "mekanized_world:gears",
+  "type": "remi:group",
+  "contents": [
+    "#c:gears"
+  ]
+}

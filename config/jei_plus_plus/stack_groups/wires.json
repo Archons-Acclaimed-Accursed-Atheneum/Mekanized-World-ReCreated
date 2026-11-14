@@ -1,0 +1,7 @@
+{
+  "id": "mekanized_world:wires",
+  "type": "remi:group",
+  "contents": [
+    "#c:wires"
+  ]
+}

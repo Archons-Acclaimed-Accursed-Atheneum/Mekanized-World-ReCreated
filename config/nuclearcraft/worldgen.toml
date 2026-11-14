@@ -1,0 +1,241 @@
+[lithium]
+	#Minimum Y level for ore generation
+	# Default: -60
+	# Range: -64 ~ 320
+	min_height = -60
+	#Maximum Y level for ore generation
+	# Default: 60
+	# Range: -60 ~ 320
+	max_height = 60
+	#Number of blocks per ore vein
+	# Default: 9
+	# Range: 1 ~ 64
+	vein_size = 9
+	#Number of ore veins attempted per chunk
+	# Default: 4
+	# Range: 0 ~ 32
+	veins_per_chunk = 4
+	#Additional ore veins attempted per chunk in the wasteland dimension. Requires veins_per_chunk > 0.
+	# Default: 0
+	# Range: 0 ~ 32
+	wasteland_extra_veins_per_chunk = 0
+
+[tin]
+	#Minimum Y level for ore generation
+	# Default: -60
+	# Range: -64 ~ 320
+	min_height = -60
+	#Maximum Y level for ore generation
+	# Default: 60
+	# Range: -60 ~ 320
+	max_height = 60
+	#Number of blocks per ore vein
+	# Default: 9
+	# Range: 1 ~ 64
+	vein_size = 9
+	#Number of ore veins attempted per chunk
+	# Default: 4
+	# Range: 0 ~ 32
+	veins_per_chunk = 4
+	#Additional ore veins attempted per chunk in the wasteland dimension. Requires veins_per_chunk > 0.
+	# Default: 0
+	# Range: 0 ~ 32
+	wasteland_extra_veins_per_chunk = 0
+
+[zinc]
+	#Minimum Y level for ore generation
+	# Default: -60
+	# Range: -64 ~ 320
+	min_height = -60
+	#Maximum Y level for ore generation
+	# Default: 60
+	# Range: -60 ~ 320
+	max_height = 60
+	#Number of blocks per ore vein
+	# Default: 9
+	# Range: 1 ~ 64
+	vein_size = 9
+	#Number of ore veins attempted per chunk
+	# Default: 4
+	# Range: 0 ~ 32
+	veins_per_chunk = 4
+	#Additional ore veins attempted per chunk in the wasteland dimension. Requires veins_per_chunk > 0.
+	# Default: 0
+	# Range: 0 ~ 32
+	wasteland_extra_veins_per_chunk = 0
+
+[silver]
+	#Minimum Y level for ore generation
+	# Default: -60
+	# Range: -64 ~ 320
+	min_height = -60
+	#Maximum Y level for ore generation
+	# Default: 60
+	# Range: -60 ~ 320
+	max_height = 60
+	#Number of blocks per ore vein
+	# Default: 9
+	# Range: 1 ~ 64
+	vein_size = 9
+	#Number of ore veins attempted per chunk
+	# Default: 4
+	# Range: 0 ~ 32
+	veins_per_chunk = 4
+	#Additional ore veins attempted per chunk in the wasteland dimension. Requires veins_per_chunk > 0.
+	# Default: 0
+	# Range: 0 ~ 32
+	wasteland_extra_veins_per_chunk = 0
+
+[platinum]
+	#Minimum Y level for ore generation
+	# Default: -60
+	# Range: -64 ~ 320
+	min_height = -60
+	#Maximum Y level for ore generation
+	# Default: 0
+	# Range: -60 ~ 320
+	max_height = 0
+	#Number of blocks per ore vein
+	# Default: 9
+	# Range: 1 ~ 64
+	vein_size = 9
+	#Number of ore veins attempted per chunk
+	# Default: 4
+	# Range: 0 ~ 32
+	veins_per_chunk = 4
+	#Additional ore veins attempted per chunk in the wasteland dimension. Requires veins_per_chunk > 0.
+	# Default: 0
+	# Range: 0 ~ 32
+	wasteland_extra_veins_per_chunk = 0
+
+[uranium]
+	#Minimum Y level for ore generation
+	# Default: -60
+	# Range: -64 ~ 320
+	min_height = -60
+	#Maximum Y level for ore generation
+	# Default: 60
+	# Range: -60 ~ 320
+	max_height = 60
+	#Number of blocks per ore vein
+	# Default: 9
+	# Range: 1 ~ 64
+	vein_size = 9
+	#Number of ore veins attempted per chunk
+	# Default: 4
+	# Range: 0 ~ 32
+	veins_per_chunk = 4
+	#Additional ore veins attempted per chunk in the wasteland dimension. Requires veins_per_chunk > 0.
+	# Default: 4
+	# Range: 0 ~ 32
+	wasteland_extra_veins_per_chunk = 4
+
+[thorium]
+	#Minimum Y level for ore generation
+	# Default: -60
+	# Range: -64 ~ 320
+	min_height = -60
+	#Maximum Y level for ore generation
+	# Default: 60
+	# Range: -60 ~ 320
+	max_height = 60
+	#Number of blocks per ore vein
+	# Default: 9
+	# Range: 1 ~ 64
+	vein_size = 9
+	#Number of ore veins attempted per chunk
+	# Default: 4
+	# Range: 0 ~ 32
+	veins_per_chunk = 4
+	#Additional ore veins attempted per chunk in the wasteland dimension. Requires veins_per_chunk > 0.
+	# Default: 4
+	# Range: 0 ~ 32
+	wasteland_extra_veins_per_chunk = 4
+
+[magnesium]
+	#Minimum Y level for ore generation
+	# Default: -60
+	# Range: -64 ~ 320
+	min_height = -60
+	#Maximum Y level for ore generation
+	# Default: 60
+	# Range: -60 ~ 320
+	max_height = 60
+	#Number of blocks per ore vein
+	# Default: 9
+	# Range: 1 ~ 64
+	vein_size = 9
+	#Number of ore veins attempted per chunk
+	# Default: 4
+	# Range: 0 ~ 32
+	veins_per_chunk = 4
+	#Additional ore veins attempted per chunk in the wasteland dimension. Requires veins_per_chunk > 0.
+	# Default: 0
+	# Range: 0 ~ 32
+	wasteland_extra_veins_per_chunk = 0
+
+[cobalt]
+	#Minimum Y level for ore generation
+	# Default: -60
+	# Range: -64 ~ 320
+	min_height = -60
+	#Maximum Y level for ore generation
+	# Default: 60
+	# Range: -60 ~ 320
+	max_height = 60
+	#Number of blocks per ore vein
+	# Default: 9
+	# Range: 1 ~ 64
+	vein_size = 9
+	#Number of ore veins attempted per chunk
+	# Default: 4
+	# Range: 0 ~ 32
+	veins_per_chunk = 4
+	#Additional ore veins attempted per chunk in the wasteland dimension. Requires veins_per_chunk > 0.
+	# Default: 0
+	# Range: 0 ~ 32
+	wasteland_extra_veins_per_chunk = 0
+
+[lead]
+	#Minimum Y level for ore generation
+	# Default: -60
+	# Range: -64 ~ 320
+	min_height = -60
+	#Maximum Y level for ore generation
+	# Default: 60
+	# Range: -60 ~ 320
+	max_height = 60
+	#Number of blocks per ore vein
+	# Default: 12
+	# Range: 1 ~ 64
+	vein_size = 12
+	#Number of ore veins attempted per chunk
+	# Default: 6
+	# Range: 0 ~ 32
+	veins_per_chunk = 6
+	#Additional ore veins attempted per chunk in the wasteland dimension. Requires veins_per_chunk > 0.
+	# Default: 0
+	# Range: 0 ~ 32
+	wasteland_extra_veins_per_chunk = 0
+
+[boron]
+	#Minimum Y level for ore generation
+	# Default: -60
+	# Range: -64 ~ 320
+	min_height = -60
+	#Maximum Y level for ore generation
+	# Default: 60
+	# Range: -60 ~ 320
+	max_height = 60
+	#Number of blocks per ore vein
+	# Default: 9
+	# Range: 1 ~ 64
+	vein_size = 9
+	#Number of ore veins attempted per chunk
+	# Default: 4
+	# Range: 0 ~ 32
+	veins_per_chunk = 4
+	#Additional ore veins attempted per chunk in the wasteland dimension. Requires veins_per_chunk > 0.
+	# Default: 0
+	# Range: 0 ~ 32
+	wasteland_extra_veins_per_chunk = 0

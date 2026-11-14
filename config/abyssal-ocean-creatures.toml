@@ -1,0 +1,71 @@
+#Leviathans and the Kraken.
+[bosses]
+	#Ice Leviathans can appear naturally in the Glacial Abyss (it can always be summoned).
+	iceLeviathanNaturalSpawn = true
+	#1 in N chance that a valid natural spawn attempt really spawns an Ice Leviathan.
+	# Default: 12
+	# Range: 1 ~ 10000
+	iceLeviathanSpawnOdds = 12
+	#Lava Leviathans can appear naturally (asleep) in the Volcanic Abyss.
+	lavaLeviathanNaturalSpawn = true
+	#1 in N chance that a valid natural spawn attempt really spawns a Lava Leviathan.
+	# Default: 16
+	# Range: 1 ~ 10000
+	lavaLeviathanSpawnOdds = 16
+	#Lava Leviathan eruptions turn the seabed they hit into Molten Crust.
+	lavaLeviathanEruptionsChangeTerrain = true
+	#Krakens can appear naturally in the Abyssal Ocean.
+	krakenNaturalSpawn = true
+	#1 in N chance per valid spawn attempt in clear weather.
+	# Default: 40
+	# Range: 1 ~ 10000
+	krakenSpawnOddsClear = 40
+	#1 in N chance per valid spawn attempt while raining.
+	# Default: 8
+	# Range: 1 ~ 10000
+	krakenSpawnOddsRain = 8
+	#1 in N chance per valid spawn attempt during thunderstorms.
+	# Default: 3
+	# Range: 1 ~ 10000
+	krakenSpawnOddsThunder = 3
+	#Kraken tentacle slams can break boats.
+	krakenBreaksBoats = true
+	#Minimum distance (blocks) between two naturally spawned bosses of the same kind.
+	# Default: 400
+	# Range: 32 ~ 10000
+	bossSpawnSpacing = 400
+	#Multiplier for the maximum health of every boss (applies to newly spawned ones).
+	# Default: 1.0
+	# Range: 0.1 ~ 20.0
+	bossHealthMultiplier = 1.0
+	#Bosses keep the chunks under their whole body loaded while a player is near, so long bodies never freeze
+	#half-way out of loaded chunks. Turn off on servers that do not want any mob loading chunks.
+	giantChunkLoading = true
+	#Player distance (blocks) within which a boss keeps its chunks loaded.
+	# Default: 160
+	# Range: 16 ~ 512
+	giantChunkLoadingRange = 160
+
+#Volcanic Abyss hazards.
+[volcanic]
+	#Toxic gas pockets near the volcanic seabed.
+	toxicGas = true
+	#Periodic seaquakes in the Volcanic Abyss.
+	seaquakes = true
+	#Seaquakes drop falling rocks and tear open new lava fissures (changes terrain).
+	seaquakesChangeTerrain = true
+	#Water above black smokers lifts players and submarines.
+	thermalCurrents = true
+
+#Atmosphere (each player's own game reads these).
+[atmosphere]
+	#Distant bloops, cries and groans while swimming in the abyss.
+	abyssAmbientSounds = true
+	#How often those sounds play (2.0 = twice as often, 0.5 = half).
+	# Default: 1.0
+	# Range: 0.1 ~ 10.0
+	abyssAmbientFrequency = 1.0
+	#The Kraken's ink darkens the fog and sky around it.
+	krakenInkFog = true
+	#Camera shake from seaquakes, roars and eruptions.
+	cameraShake = true

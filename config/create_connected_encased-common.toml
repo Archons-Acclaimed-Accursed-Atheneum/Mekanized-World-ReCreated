@@ -1,0 +1,14 @@
+#.
+#Does the encased variants of the blocks use their own stress keys or the base block stress keys (default false, use base block stress keys)
+encasedBlocksUsesOwnKeys = false
+#.
+#Can swap casing between block (Brake, Clutch, Gearshift, Gearbox, etc...)
+casingBlockSwappable = true
+#.
+#Should Wooden Shear Pins break if the speed is too high
+shouldWoodenShearPinBreak = false
+#.
+#The max speed wooden Shear Pins can endure
+# Default: 32
+# Range: 2 ~ 256
+maxSpeedWoodenShearPin = 32
